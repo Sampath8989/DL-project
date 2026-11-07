@@ -1,0 +1,4 @@
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files: 100%|##########| 8/8 [02:46<00:00, 20.83s/it]Fetching 8 files: 100%|##########| 8/8 [02:46<00:00, 20.83s/it]
+OK meta-llama/Llama-3.2-1B-Instruct
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:  18%|#8        | 2/11 [00:00<00:03,  2.96it/s]Fetching 11 files:  45%|####5     | 5/11 [00:00<00:00,  7.06it/s]Fetching 11 files:  64%|######3   | 7/11 [00:01<00:00,  8.13it/s]Fetching 11 files:  82%|########1 | 9/11 [00:02<00:00,  3.68it/s]Fetching 11 files:  91%|######### | 10/11 [03:58<00:48, 48.52s/it]Fetching 11 files: 100%|##########| 11/11 [05:54<00:00, 63.91s/it]Fetching 11 files: 100%|##########| 11/11 [05:54<00:00, 32.26s/it]
+OK meta-llama/Llama-3.2-3B-Instruct

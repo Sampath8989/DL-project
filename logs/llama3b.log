@@ -1,0 +1,151 @@
+=== meta-llama/Llama-3.2-3B-Instruct layer_attn 00:02:13
+working set: working_popqa.jsonl (800 items)
+extracting from meta-llama/Llama-3.2-3B-Instruct on cuda (float16) ...
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   2%|1         | 4/254 [00:00<00:06, 37.94it/s]Loading weights:   3%|3         | 8/254 [00:00<00:13, 18.69it/s]Loading weights:   7%|6         | 17/254 [00:00<00:12, 19.35it/s]Loading weights:   8%|8         | 21/254 [00:00<00:10, 21.46it/s]Loading weights:  10%|#         | 26/254 [00:01<00:12, 19.00it/s]Loading weights:  12%|#1        | 30/254 [00:01<00:12, 18.30it/s]Loading weights:  13%|#2        | 32/254 [00:01<00:12, 18.32it/s]Loading weights:  13%|#3        | 34/254 [00:01<00:12, 17.21it/s]Loading weights:  15%|#4        | 38/254 [00:01<00:10, 20.72it/s]Loading weights:  17%|#7        | 44/254 [00:02<00:12, 17.08it/s]Loading weights:  20%|#9        | 50/254 [00:02<00:13, 14.68it/s]Loading weights:  23%|##2       | 58/254 [00:02<00:09, 21.49it/s]Loading weights:  24%|##4       | 62/254 [00:03<00:10, 17.47it/s]Loading weights:  26%|##6       | 67/254 [00:03<00:09, 19.94it/s]Loading weights:  28%|##7       | 71/254 [00:03<00:12, 15.17it/s]Loading weights:  30%|##9       | 76/254 [00:04<00:09, 18.95it/s]Loading weights:  31%|###1      | 79/254 [00:04<00:10, 16.45it/s]Loading weights:  32%|###2      | 82/254 [00:04<00:09, 17.84it/s]Loading weights:  33%|###3      | 85/254 [00:04<00:09, 18.24it/s]Loading weights:  35%|###4      | 88/254 [00:04<00:10, 16.32it/s]Loading weights:  35%|###5      | 90/254 [00:05<00:09, 16.43it/s]Loading weights:  36%|###6      | 92/254 [00:05<00:10, 15.79it/s]Loading weights:  37%|###7      | 94/254 [00:05<00:10, 15.90it/s]Loading weights:  39%|###8      | 98/254 [00:05<00:11, 13.90it/s]Loading weights:  40%|####      | 102/254 [00:05<00:08, 17.26it/s]Loading weights:  42%|####1     | 106/254 [00:06<00:10, 14.02it/s]Loading weights:  44%|####3     | 111/254 [00:06<00:08, 17.60it/s]Loading weights:  46%|####5     | 116/254 [00:06<00:09, 14.81it/s]Loading weights:  48%|####7     | 121/254 [00:06<00:07, 17.94it/s]Loading weights:  49%|####8     | 124/254 [00:07<00:09, 13.75it/s]Loading weights:  51%|#####     | 129/254 [00:07<00:07, 17.68it/s]Loading weights:  53%|#####2    | 134/254 [00:07<00:08, 14.82it/s]Loading weights:  55%|#####4    | 139/254 [00:07<00:06, 19.10it/s]Loading weights:  56%|#####5    | 142/254 [00:08<00:06, 18.17it/s]Loading weights:  57%|#####7    | 145/254 [00:08<00:06, 16.18it/s]Loading weights:  58%|#####8    | 148/254 [00:08<00:07, 14.81it/s]Loading weights:  59%|#####9    | 151/254 [00:08<00:07, 13.65it/s]Loading weights:  62%|######1   | 157/254 [00:09<00:05, 19.33it/s]Loading weights:  63%|######2   | 160/254 [00:09<00:04, 20.04it/s]Loading weights:  64%|######4   | 163/254 [00:09<00:06, 14.58it/s]Loading weights:  67%|######6   | 170/254 [00:09<00:04, 18.01it/s]Loading weights:  68%|######8   | 173/254 [00:10<00:04, 17.23it/s]Loading weights:  70%|#######   | 179/254 [00:10<00:04, 15.36it/s]Loading weights:  72%|#######2  | 183/254 [00:10<00:05, 12.70it/s]Loading weights:  73%|#######2  | 185/254 [00:11<00:05, 13.20it/s]Loading weights:  76%|#######5  | 193/254 [00:11<00:02, 21.15it/s]Loading weights:  78%|#######7  | 197/254 [00:11<00:02, 22.81it/s]Loading weights:  79%|#######8  | 200/254 [00:11<00:03, 17.83it/s]Loading weights:  80%|#######9  | 203/254 [00:11<00:02, 18.89it/s]Loading weights:  81%|########1 | 206/254 [00:11<00:02, 19.22it/s]Loading weights:  82%|########2 | 209/254 [00:12<00:02, 16.61it/s]Loading weights:  83%|########3 | 211/254 [00:12<00:02, 16.20it/s]Loading weights:  85%|########4 | 215/254 [00:12<00:02, 14.18it/s]Loading weights:  86%|########6 | 219/254 [00:12<00:01, 18.13it/s]Loading weights:  88%|########7 | 223/254 [00:13<00:02, 13.75it/s]Loading weights:  90%|########9 | 228/254 [00:13<00:01, 18.41it/s]Loading weights:  91%|#########1| 232/254 [00:13<00:01, 16.64it/s]Loading weights:  93%|#########2| 235/254 [00:13<00:01, 18.39it/s]Loading weights:  94%|#########3| 238/254 [00:13<00:00, 19.06it/s]Loading weights:  95%|#########5| 242/254 [00:14<00:00, 15.71it/s]Loading weights:  97%|#########7| 247/254 [00:14<00:00, 20.06it/s]Loading weights: 100%|##########| 254/254 [00:14<00:00, 17.66it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  item 0/800
+  item 50/800
+  item 100/800
+  item 150/800
+  item 200/800
+  item 250/800
+  item 300/800
+  item 350/800
+  item 400/800
+  item 450/800
+  item 500/800
+  item 550/800
+  item 600/800
+  item 650/800
+  item 700/800
+  item 750/800
+label balance: {'n': 800, 'n_pos': 563, 'pos_rate': 0.70375}
+training layer_attn probe on (29, 3072) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.862
+  auprc                  0.9390919780747881
+  tpr_at_fpr10           0.7
+  ece                    0.16792038919811603
+  brier                  0.171420034615835
+  n                      160
+  n_pos                  110
+  pos_rate               0.6875
+  mean_spread            0.09956605732440948
+  selectivity            0.31928840125391844
+  auroc_random_labels    0.5427115987460815
+  auroc_confounds_only   0.9072727272727275
+  auroc_with_probe       0.9054545454545455
+  unique_gain            -0.001818181818181941
+  model                  meta-llama/Llama-3.2-3B-Instruct
+  dataset                popqa
+  arch                   layer_attn
+  rep                    h_answer
+  layer                  -1
+  n_params               403457
+  cache                  D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.5067551828558118
+
+wrote D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\layer_attn_h_answer.json
+=== meta-llama/Llama-3.2-3B-Instruct linear 00:30:18
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 563, 'pos_rate': 0.70375}
+training linear probe on (3072,) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8865454545454546
+  auprc                  0.9483586633142471
+  tpr_at_fpr10           0.7090909090909091
+  ece                    0.17754716010567792
+  brier                  0.16256809198165217
+  n                      160
+  n_pos                  110
+  pos_rate               0.6875
+  mean_spread            0.05781600624322891
+  selectivity            0.3841943573667712
+  auroc_random_labels    0.5023510971786834
+  auroc_confounds_only   0.9072727272727275
+  auroc_with_probe       0.9127272727272727
+  unique_gain            0.005454545454545268
+  model                  meta-llama/Llama-3.2-3B-Instruct
+  dataset                popqa
+  arch                   linear
+  rep                    h_answer
+  layer                  12
+  n_params               3073
+  cache                  D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.5067551828558118
+
+wrote D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\linear_h_answer.json
+=== meta-llama/Llama-3.2-3B-Instruct mlp 00:30:42
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 563, 'pos_rate': 0.70375}
+training mlp probe on (3072,) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8825454545454545
+  auprc                  0.9492559230502184
+  tpr_at_fpr10           0.7090909090909091
+  ece                    0.12618226654012688
+  brier                  0.14796813279468327
+  n                      160
+  n_pos                  110
+  pos_rate               0.6875
+  mean_spread            0.05943875387310982
+  selectivity            0.3549200626959247
+  auroc_random_labels    0.5276253918495298
+  auroc_confounds_only   0.9072727272727275
+  auroc_with_probe       0.9081818181818182
+  unique_gain            0.0009090909090907484
+  model                  meta-llama/Llama-3.2-3B-Instruct
+  dataset                popqa
+  arch                   mlp
+  rep                    h_answer
+  layer                  12
+  n_params               407809
+  cache                  D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.5067551828558118
+
+wrote D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\mlp_h_answer.json
+=== meta-llama/Llama-3.2-3B-Instruct traj 00:31:07
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 563, 'pos_rate': 0.70375}
+training traj probe on (16, 3072) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8765454545454546
+  auprc                  0.9450964182922892
+  tpr_at_fpr10           0.6909090909090909
+  ece                    0.1441186547046527
+  brier                  0.14550810554773053
+  n                      160
+  n_pos                  110
+  pos_rate               0.6875
+  mean_spread            0.08931216597557068
+  selectivity            0.4033871473354233
+  auroc_random_labels    0.4731583072100313
+  auroc_confounds_only   0.9072727272727275
+  auroc_with_probe       0.9109090909090909
+  unique_gain            0.0036363636363634377
+  model                  meta-llama/Llama-3.2-3B-Instruct
+  dataset                popqa
+  arch                   traj
+  rep                    h_answer
+  layer                  12
+  n_params               664961
+  cache                  D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.5067551828558118
+
+wrote D:\Deep Learning\hallu-probe\out\meta-llama_Llama-3.2-3B-Instruct__popqa\traj_h_answer.json
+=== DONE meta-llama/Llama-3.2-3B-Instruct 00:33:10

@@ -1,0 +1,327 @@
+﻿{
+    "started":  "2026-10-13T12:51:02",
+    "updated":  "2026-10-13T15:44:08",
+    "repo":  "D:\\Deep Learning\\hallu-probe",
+    "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-20261013-125102.log",
+    "handoff":  "D:\\Deep Learning\\hallu-probe\\review3_handoff",
+    "steps":  [
+                  {
+                      "name":  "decoding check Qwen2.5-3B-Instruct",
+                      "kind":  "decoding",
+                      "result":  "ok",
+                      "minutes":  1.9,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  1.9,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\decoding-check-Qwen2-5-3B-Instruct--try1.log"
+                  },
+                  {
+                      "name":  "decoding check Llama-3.2-3B-Instruct",
+                      "kind":  "decoding",
+                      "result":  "ok",
+                      "minutes":  1.4,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  1.4,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\decoding-check-Llama-3-2-3B-Instruct--try1.log"
+                  },
+                  {
+                      "name":  "decoding check Qwen2.5-1.5B-Instruct",
+                      "kind":  "decoding",
+                      "result":  "ok",
+                      "minutes":  0.8,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0.8,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\decoding-check-Qwen2-5-1-5B-Instruct--try1.log"
+                  },
+                  {
+                      "name":  "decoding check Llama-3.2-1B-Instruct",
+                      "kind":  "decoding",
+                      "result":  "ok",
+                      "minutes":  0.6,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0.6,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\decoding-check-Llama-3-2-1B-Instruct--try1.log"
+                  },
+                  {
+                      "name":  "decoding check Qwen2.5-0.5B-Instruct",
+                      "kind":  "decoding",
+                      "result":  "ok",
+                      "minutes":  1.2,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  1.2,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\decoding-check-Qwen2-5-0-5B-Instruct--try1.log"
+                  },
+                  {
+                      "name":  "quarantine stale caches",
+                      "kind":  "quarantine",
+                      "result":  "ok",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\quarantine-stale-caches--try1.log"
+                  },
+                  {
+                      "name":  "verify cache alignment",
+                      "kind":  "verify",
+                      "result":  "ok",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\verify-cache-alignment--try1.log"
+                  },
+                  {
+                      "name":  "extract Qwen2.5-3B-Instruct popqa",
+                      "kind":  "extract",
+                      "result":  "skipped (cached)",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+
+                                   ],
+                      "log":  ""
+                  },
+                  {
+                      "name":  "baselines Qwen2.5-3B-Instruct popqa",
+                      "kind":  "baselines",
+                      "result":  "ok",
+                      "minutes":  0.1,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0.1,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\baselines-Qwen2-5-3B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "extract Llama-3.2-3B-Instruct popqa",
+                      "kind":  "extract",
+                      "result":  "skipped (cached)",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+
+                                   ],
+                      "log":  ""
+                  },
+                  {
+                      "name":  "baselines Llama-3.2-3B-Instruct popqa",
+                      "kind":  "baselines",
+                      "result":  "ok",
+                      "minutes":  0.1,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  0.1,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\baselines-Llama-3-2-3B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "extract Qwen2.5-1.5B-Instruct popqa",
+                      "kind":  "extract",
+                      "result":  "ok",
+                      "minutes":  12.9,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  12.9,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\extract-Qwen2-5-1-5B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "baselines Qwen2.5-1.5B-Instruct popqa",
+                      "kind":  "baselines",
+                      "result":  "ok",
+                      "minutes":  19.5,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  19.5,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\baselines-Qwen2-5-1-5B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "extract Llama-3.2-1B-Instruct popqa",
+                      "kind":  "extract",
+                      "result":  "skipped (cached)",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+
+                                   ],
+                      "log":  ""
+                  },
+                  {
+                      "name":  "baselines Llama-3.2-1B-Instruct popqa",
+                      "kind":  "baselines",
+                      "result":  "ok",
+                      "minutes":  11.5,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  11.5,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\baselines-Llama-3-2-1B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "extract Qwen2.5-0.5B-Instruct popqa",
+                      "kind":  "extract",
+                      "result":  "ok",
+                      "minutes":  23.2,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  23.2,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\extract-Qwen2-5-0-5B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "baselines Qwen2.5-0.5B-Instruct popqa",
+                      "kind":  "baselines",
+                      "result":  "ok",
+                      "minutes":  16,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  16,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\baselines-Qwen2-5-0-5B-Instruct-popqa--try1.log"
+                  },
+                  {
+                      "name":  "interim analysis (PopQA only)",
+                      "kind":  "analysis",
+                      "result":  "ok",
+                      "minutes":  42.6,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  42.6,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\interim-analysis-PopQA-only--try1.log"
+                  },
+                  {
+                      "name":  "TriviaQA pass",
+                      "kind":  "scope",
+                      "result":  "not requested",
+                      "minutes":  0,
+                      "settings":  "",
+                      "attempts":  [
+
+                                   ],
+                      "log":  ""
+                  },
+                  {
+                      "name":  "final analysis (all probes, baseline ladder, controls)",
+                      "kind":  "analysis",
+                      "result":  "ok",
+                      "minutes":  41.4,
+                      "settings":  "",
+                      "attempts":  [
+                                       {
+                                           "try":  1,
+                                           "extra":  "",
+                                           "exit":  0,
+                                           "minutes":  41.4,
+                                           "diagnosis":  ""
+                                       }
+                                   ],
+                      "log":  "D:\\Deep Learning\\hallu-probe\\logs\\review3-steps\\final-analysis-all-probes-baseline-ladder-controls--try1.log"
+                  }
+              ],
+    "finished":  "2026-10-13T15:44:08",
+    "verdict":  "complete"
+}

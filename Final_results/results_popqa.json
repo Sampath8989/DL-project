@@ -1,0 +1,3107 @@
+{
+  "created": "2026-10-13 15:02:37",
+  "seed": 0,
+  "crossfit": true,
+  "ladder": {
+    "B0": {
+      "describes": "surface",
+      "features": [
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity"
+      ]
+    },
+    "B1": {
+      "describes": "confidence",
+      "features": [
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob",
+        "min_logprob",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy"
+      ]
+    },
+    "B2": {
+      "describes": "benchmark (published methods)",
+      "features": [
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob",
+        "min_logprob",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ]
+    }
+  },
+  "results": [
+    {
+      "model": "meta-llama_Llama-3.2-1B-Instruct",
+      "dataset": "popqa",
+      "n": 800,
+      "clusters": 20,
+      "label_balance": {
+        "n": 800,
+        "n_pos": 619,
+        "pos_rate": 0.77375
+      },
+      "single_baselines": {
+        "mean_logprob": {
+          "auroc": 0.8964624676445211,
+          "n": 160,
+          "se": 0.024443401974463833
+        },
+        "min_logprob": {
+          "auroc": 0.8986194995685935,
+          "n": 160,
+          "se": 0.024138262942264906
+        },
+        "n_new_tokens": {
+          "auroc": 0.5775452976704056,
+          "n": 160,
+          "se": 0.05154398917746592
+        },
+        "answer_chars": {
+          "auroc": 0.6148619499568593,
+          "n": 160,
+          "se": 0.04989212827823614
+        },
+        "log_popularity": {
+          "auroc": 0.8095340811044004,
+          "n": 160,
+          "se": 0.035037855793107794
+        },
+        "mean_logprob_tf": {
+          "auroc": 0.8971095772217429,
+          "n": 160,
+          "se": 0.024352121668105554
+        },
+        "min_logprob_tf": {
+          "auroc": 0.8988352027610008,
+          "n": 160,
+          "se": 0.024107611351123902
+        },
+        "mean_entropy": {
+          "auroc": 0.9007765314926661,
+          "n": 160,
+          "se": 0.023830604502894853
+        },
+        "max_entropy": {
+          "auroc": 0.8986194995685935,
+          "n": 160,
+          "se": 0.024138262942264906
+        },
+        "p_true": {
+          "auroc": 0.6389128559102675,
+          "n": 160,
+          "se": 0.048631094989268424
+        },
+        "semantic_entropy": {
+          "auroc": 0.7676876617773943,
+          "n": 160,
+          "se": 0.039167920130435394
+        },
+        "self_consistency": {
+          "auroc": 0.7571182053494392,
+          "n": 160,
+          "se": 0.04012440407821491
+        },
+        "distinct_rate": {
+          "auroc": 0.7670405522001725,
+          "n": 160,
+          "se": 0.039227457216606615
+        }
+      },
+      "best_single_baseline": "mean_entropy",
+      "best_single_baseline_auroc": 0.9007765314926661,
+      "feature_names": [
+        "mean_logprob",
+        "min_logprob",
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ],
+      "probes": {
+        "linear": {
+          "auroc": 0.9214840379637619,
+          "auprc": 0.9713724831675652,
+          "tpr_at_fpr10": 0.7131147540983607,
+          "ece": 0.24110882165841757,
+          "brier": 0.1620075814357151,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.055521510541439056,
+          "auroc_se": 0.020736451444637226,
+          "layer": 8,
+          "n_params": 2049,
+          "auroc_control_permuted": 0.5466443887496519,
+          "selectivity_permuted": 0.37483964921410995,
+          "auroc_control_group": 1.0,
+          "selectivity_group": -0.07851596203623812,
+          "auroc_B0": 0.7978214285714286,
+          "auroc_B0_plus_probe": 0.9232083333333334,
+          "unique_gain_over_B0": 0.12538690476190484,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9018690476190476,
+          "auroc_B1_plus_probe": 0.9406845238095238,
+          "unique_gain_over_B1": 0.038815476190476206,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9047916666666665,
+          "auroc_B2_plus_probe": 0.9439107142857143,
+          "unique_gain_over_B2": 0.03911904761904772,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.013157894736842146,
+            "lo": -0.044807715195076536,
+            "hi": 0.06949180327868854,
+            "p_gt_zero": 0.692,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.02070750647109576,
+            "lo": -0.04114850877655135,
+            "hi": 0.08643498949835883,
+            "p_gt_zero": 0.739,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.884620533921224,
+            "auroc_se": 0.011667032112795229,
+            "auroc_B0": 0.7755180829925126,
+            "auroc_B0_plus_probe": 0.8847447860921503,
+            "unique_gain_over_B0": 0.10922670309963778,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8919167298691295,
+            "auroc_B1_plus_probe": 0.9039969060327046,
+            "unique_gain_over_B1": 0.01208017616357504,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing"
+            ],
+            "auroc_B2": 0.8963644702924798,
+            "auroc_B2_plus_probe": 0.9065526482422627,
+            "unique_gain_over_B2": 0.010188177949782884,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8912164514142397,
+            "vs_B2": {
+              "delta": -0.0065959174930156905,
+              "lo": -0.03269594698348363,
+              "hi": 0.018080240415626413,
+              "p_gt_zero": 0.3055,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 38.7
+        },
+        "mlp": {
+          "auroc": 0.9022864538395168,
+          "auprc": 0.9631767816241896,
+          "tpr_at_fpr10": 0.5901639344262295,
+          "ece": 0.18070940092147791,
+          "brier": 0.13614935678876167,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.0632307380437851,
+          "auroc_se": 0.023613715313148625,
+          "layer": 8,
+          "n_params": 274689,
+          "auroc_control_permuted": 0.5346700083542189,
+          "selectivity_permuted": 0.3676164454852979,
+          "auroc_control_group": 1.0,
+          "selectivity_group": -0.09771354616048322,
+          "auroc_B0": 0.7978214285714286,
+          "auroc_B0_plus_probe": 0.9183035714285716,
+          "unique_gain_over_B0": 0.12048214285714298,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9018690476190476,
+          "auroc_B1_plus_probe": 0.9385,
+          "unique_gain_over_B1": 0.036630952380952375,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9047916666666665,
+          "auroc_B2_plus_probe": 0.9351726190476188,
+          "unique_gain_over_B2": 0.030380952380952286,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.006039689387402958,
+            "lo": -0.0691631751868821,
+            "hi": 0.05377179621848724,
+            "p_gt_zero": 0.4625,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.0015099223468506562,
+            "lo": -0.06548678023525585,
+            "hi": 0.06958914760044638,
+            "p_gt_zero": 0.53,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8947152330884781,
+            "auroc_se": 0.011036345644941919,
+            "auroc_B0": 0.7755180829925126,
+            "auroc_B0_plus_probe": 0.892525659018578,
+            "unique_gain_over_B0": 0.11700757602606549,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8919167298691295,
+            "auroc_B1_plus_probe": 0.9066411316903056,
+            "unique_gain_over_B1": 0.01472440182117607,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing"
+            ],
+            "auroc_B2": 0.8963644702924798,
+            "auroc_B2_plus_probe": 0.9088487287444801,
+            "unique_gain_over_B2": 0.012484258452000296,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8912164514142397,
+            "vs_B2": {
+              "delta": 0.003498781674238449,
+              "lo": -0.021300019366899552,
+              "hi": 0.027795704983037635,
+              "p_gt_zero": 0.6015,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 47.3
+        },
+        "layer_attn": {
+          "auroc": 0.907679033649698,
+          "auprc": 0.9697978405390439,
+          "tpr_at_fpr10": 0.7131147540983607,
+          "ece": 0.17543989102123306,
+          "brier": 0.13852429091142324,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.05357450246810913,
+          "auroc_se": 0.02282850599011105,
+          "layer": -1,
+          "n_params": 268801,
+          "auroc_control_permuted": 0.5271512113617377,
+          "selectivity_permuted": 0.38052782228796034,
+          "auroc_control_group": 1.0,
+          "selectivity_group": -0.09232096635030196,
+          "auroc_B0": 0.7978214285714286,
+          "auroc_B0_plus_probe": 0.9055,
+          "unique_gain_over_B0": 0.1076785714285714,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9018690476190476,
+          "auroc_B1_plus_probe": 0.9344345238095239,
+          "unique_gain_over_B1": 0.03256547619047623,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9047916666666665,
+          "auroc_B2_plus_probe": 0.935375,
+          "unique_gain_over_B2": 0.030583333333333407,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.0006471095772216939,
+            "lo": -0.05526734650148031,
+            "hi": 0.054790883192114934,
+            "p_gt_zero": 0.5035,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.00690250215703192,
+            "lo": -0.051282510140777796,
+            "hi": 0.06817916049006079,
+            "p_gt_zero": 0.6065,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8786315479431269,
+            "auroc_se": 0.012030898803554983,
+            "auroc_B0": 0.7755180829925126,
+            "auroc_B0_plus_probe": 0.8805144739546785,
+            "unique_gain_over_B0": 0.10499639096216595,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8919167298691295,
+            "auroc_B1_plus_probe": 0.9013638146407619,
+            "unique_gain_over_B1": 0.009447084771632364,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing"
+            ],
+            "auroc_B2": 0.8963644702924798,
+            "auroc_B2_plus_probe": 0.9040650997181287,
+            "unique_gain_over_B2": 0.007700629425648864,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8912164514142397,
+            "vs_B2": {
+              "delta": -0.01258490347111274,
+              "lo": -0.03761899960607768,
+              "hi": 0.011409252343865698,
+              "p_gt_zero": 0.154,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 137.7
+        },
+        "traj": {
+          "auroc": 0.8934426229508197,
+          "auprc": 0.9612857086747589,
+          "tpr_at_fpr10": 0.7459016393442623,
+          "ece": 0.13332011920865627,
+          "brier": 0.13920194195235708,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.0646684318780899,
+          "auroc_se": 0.024866461899944653,
+          "layer": 8,
+          "n_params": 531841,
+          "auroc_control_permuted": 0.5160122528543581,
+          "selectivity_permuted": 0.3774303700964615,
+          "auroc_control_group": 1.0,
+          "selectivity_group": -0.10655737704918034,
+          "auroc_B0": 0.7978214285714286,
+          "auroc_B0_plus_probe": 0.9030119047619047,
+          "unique_gain_over_B0": 0.10519047619047617,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9018690476190476,
+          "auroc_B1_plus_probe": 0.9266369047619047,
+          "unique_gain_over_B1": 0.02476785714285712,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9047916666666665,
+          "auroc_B2_plus_probe": 0.9341309523809525,
+          "unique_gain_over_B2": 0.0293392857142859,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.01488352027610007,
+            "lo": -0.07648766131201896,
+            "hi": 0.04396230910788836,
+            "p_gt_zero": 0.3435,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": -0.007333908541846457,
+            "lo": -0.07210112105481954,
+            "hi": 0.05824118536923413,
+            "p_gt_zero": 0.4395,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8617802729406725,
+            "auroc_se": 0.013016535257080504,
+            "auroc_B0": 0.7755180829925126,
+            "auroc_B0_plus_probe": 0.8669732576793946,
+            "unique_gain_over_B0": 0.09145517468688202,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8919167298691295,
+            "auroc_B1_plus_probe": 0.8983728909869744,
+            "unique_gain_over_B1": 0.006456161117844861,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing"
+            ],
+            "auroc_B2": 0.8963644702924798,
+            "auroc_B2_plus_probe": 0.9005045860179614,
+            "unique_gain_over_B2": 0.0041401157254815635,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "mean_logprob_tf_missing",
+              "min_logprob_tf",
+              "min_logprob_tf_missing",
+              "mean_entropy",
+              "mean_entropy_missing",
+              "max_entropy",
+              "max_entropy_missing",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8912164514142397,
+            "vs_B2": {
+              "delta": -0.029436178473567165,
+              "lo": -0.057600519746021844,
+              "hi": -0.002848214833325241,
+              "p_gt_zero": 0.0145,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 301.6
+        }
+      },
+      "auroc_B2_oof": 0.9083261432269197
+    },
+    {
+      "model": "meta-llama_Llama-3.2-3B-Instruct",
+      "dataset": "popqa",
+      "n": 800,
+      "clusters": 20,
+      "label_balance": {
+        "n": 800,
+        "n_pos": 563,
+        "pos_rate": 0.70375
+      },
+      "single_baselines": {
+        "mean_logprob": {
+          "auroc": 0.9003636363636364,
+          "n": 160,
+          "se": 0.023580957007987517
+        },
+        "min_logprob": {
+          "auroc": 0.8947272727272727,
+          "n": 160,
+          "se": 0.02431424981840435
+        },
+        "n_new_tokens": {
+          "auroc": 0.6037272727272728,
+          "n": 160,
+          "se": 0.046813422283549275
+        },
+        "answer_chars": {
+          "auroc": 0.593,
+          "n": 160,
+          "se": 0.04720081478556689
+        },
+        "log_popularity": {
+          "auroc": 0.7891818181818182,
+          "n": 160,
+          "se": 0.03547015022139736
+        },
+        "mean_logprob_tf": {
+          "auroc": 0.9001818181818182,
+          "n": 160,
+          "se": 0.023604896868290117
+        },
+        "min_logprob_tf": {
+          "auroc": 0.894,
+          "n": 160,
+          "se": 0.024407565975108507
+        },
+        "mean_entropy": {
+          "auroc": 0.8825454545454546,
+          "n": 160,
+          "se": 0.025840281117679997
+        },
+        "max_entropy": {
+          "auroc": 0.883090909090909,
+          "n": 160,
+          "se": 0.025773578782284378
+        },
+        "p_true": {
+          "auroc": 0.829090909090909,
+          "n": 160,
+          "se": 0.03174720345658822
+        },
+        "semantic_entropy": {
+          "auroc": 0.7409090909090909,
+          "n": 160,
+          "se": 0.03931403576465277
+        },
+        "self_consistency": {
+          "auroc": 0.792,
+          "n": 160,
+          "se": 0.035224217286459435
+        },
+        "distinct_rate": {
+          "auroc": 0.7409090909090909,
+          "n": 160,
+          "se": 0.03931403576465277
+        }
+      },
+      "best_single_baseline": "mean_logprob",
+      "best_single_baseline_auroc": 0.9003636363636364,
+      "feature_names": [
+        "mean_logprob",
+        "min_logprob",
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ],
+      "probes": {
+        "linear": {
+          "auroc": 0.8865454545454546,
+          "auprc": 0.9483586633142471,
+          "tpr_at_fpr10": 0.7090909090909091,
+          "ece": 0.17754716010567792,
+          "brier": 0.16256809198165217,
+          "n": 160,
+          "n_pos": 110,
+          "pos_rate": 0.6875,
+          "mean_spread": 0.05781600624322891,
+          "auroc_se": 0.025347675352032344,
+          "layer": 12,
+          "n_params": 3073,
+          "auroc_control_permuted": 0.5023510971786834,
+          "selectivity_permuted": 0.3841943573667712,
+          "auroc_control_group": 0.9619063601275382,
+          "selectivity_group": -0.07536090558208353,
+          "auroc_B0": 0.7881818181818181,
+          "auroc_B0_plus_probe": 0.8872727272727273,
+          "unique_gain_over_B0": 0.09909090909090923,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.900909090909091,
+          "auroc_B1_plus_probe": 0.9081818181818182,
+          "unique_gain_over_B1": 0.0072727272727272085,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.909090909090909,
+          "auroc_B2_plus_probe": 0.9072727272727272,
+          "unique_gain_over_B2": -0.0018181818181817189,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.024363636363636254,
+            "lo": -0.0685807703159455,
+            "hi": 0.01746658385155243,
+            "p_gt_zero": 0.127,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": -0.01381818181818173,
+            "lo": -0.07176108084476733,
+            "hi": 0.04389945541456604,
+            "p_gt_zero": 0.317,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8997384415915343,
+            "auroc_se": 0.010529280764187243,
+            "auroc_B0": 0.8075542338004681,
+            "auroc_B0_plus_probe": 0.9011624500699357,
+            "unique_gain_over_B0": 0.09360821626946758,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9000735641884319,
+            "auroc_B1_plus_probe": 0.914851504290287,
+            "unique_gain_over_B1": 0.01477794010185518,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.9109853776640575,
+            "auroc_B2_plus_probe": 0.9202323233002483,
+            "unique_gain_over_B2": 0.009246945636190773,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.9086269307732087,
+            "vs_B2": {
+              "delta": -0.008888489181674397,
+              "lo": -0.028769386160046616,
+              "hi": 0.010868710206703108,
+              "p_gt_zero": 0.1825,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.5067551828558118,
+          "seconds": 38.1
+        },
+        "mlp": {
+          "auroc": 0.8825454545454545,
+          "auprc": 0.9492559230502184,
+          "tpr_at_fpr10": 0.7090909090909091,
+          "ece": 0.12618226654012688,
+          "brier": 0.14796813279468327,
+          "n": 160,
+          "n_pos": 110,
+          "pos_rate": 0.6875,
+          "mean_spread": 0.05943875387310982,
+          "auroc_se": 0.02584028111768004,
+          "layer": 12,
+          "n_params": 407809,
+          "auroc_control_permuted": 0.5276253918495298,
+          "selectivity_permuted": 0.3549200626959247,
+          "auroc_control_group": 0.9874139956368518,
+          "selectivity_group": -0.10486854109139732,
+          "auroc_B0": 0.7881818181818181,
+          "auroc_B0_plus_probe": 0.8845454545454544,
+          "unique_gain_over_B0": 0.09636363636363632,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.900909090909091,
+          "auroc_B1_plus_probe": 0.9072727272727272,
+          "unique_gain_over_B1": 0.006363636363636238,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.909090909090909,
+          "auroc_B2_plus_probe": 0.9081818181818182,
+          "unique_gain_over_B2": -0.0009090909090907484,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.02836363636363637,
+            "lo": -0.0736623131301786,
+            "hi": 0.015455678471598323,
+            "p_gt_zero": 0.0975,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": -0.017818181818181844,
+            "lo": -0.0745928194993413,
+            "hi": 0.036870835205151074,
+            "p_gt_zero": 0.2605,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.9019718056523596,
+            "auroc_se": 0.010395838258272842,
+            "auroc_B0": 0.8075542338004681,
+            "auroc_B0_plus_probe": 0.9055922652670558,
+            "unique_gain_over_B0": 0.09803803146658774,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9000735641884319,
+            "auroc_B1_plus_probe": 0.9164692860056844,
+            "unique_gain_over_B1": 0.016395721817252573,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.9109853776640575,
+            "auroc_B2_plus_probe": 0.921936803164591,
+            "unique_gain_over_B2": 0.010951425500533518,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.9086269307732087,
+            "vs_B2": {
+              "delta": -0.0066551251208490925,
+              "lo": -0.025606893432690393,
+              "hi": 0.012406529671538572,
+              "p_gt_zero": 0.258,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.5067551828558118,
+          "seconds": 52.7
+        },
+        "layer_attn": {
+          "auroc": 0.862,
+          "auprc": 0.9390919780747881,
+          "tpr_at_fpr10": 0.7,
+          "ece": 0.16792038919811603,
+          "brier": 0.171420034615835,
+          "n": 160,
+          "n_pos": 110,
+          "pos_rate": 0.6875,
+          "mean_spread": 0.09956605732440948,
+          "auroc_se": 0.02825124478282476,
+          "layer": -1,
+          "n_params": 403457,
+          "auroc_control_permuted": 0.5427115987460815,
+          "selectivity_permuted": 0.31928840125391844,
+          "auroc_control_group": 0.9724786037925827,
+          "selectivity_group": -0.11047860379258267,
+          "auroc_B0": 0.7881818181818181,
+          "auroc_B0_plus_probe": 0.8663636363636364,
+          "unique_gain_over_B0": 0.07818181818181835,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.900909090909091,
+          "auroc_B1_plus_probe": 0.9,
+          "unique_gain_over_B1": -0.0009090909090909705,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.909090909090909,
+          "auroc_B2_plus_probe": 0.9036363636363636,
+          "unique_gain_over_B2": -0.005454545454545379,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.0489090909090909,
+            "lo": -0.09778880855816148,
+            "hi": 0.00229724718518516,
+            "p_gt_zero": 0.0305,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": -0.03836363636363638,
+            "lo": -0.0999276470468729,
+            "hi": 0.020973879909896107,
+            "p_gt_zero": 0.111,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.9013422667895766,
+            "auroc_se": 0.01043358340505712,
+            "auroc_B0": 0.8075542338004681,
+            "auroc_B0_plus_probe": 0.9026437156485642,
+            "unique_gain_over_B0": 0.09508948184809607,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9000735641884319,
+            "auroc_B1_plus_probe": 0.9196660919946023,
+            "unique_gain_over_B1": 0.01959252780617038,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.9109853776640575,
+            "auroc_B2_plus_probe": 0.9239721397526249,
+            "unique_gain_over_B2": 0.012986762088567416,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.9086269307732087,
+            "vs_B2": {
+              "delta": -0.007284663983632034,
+              "lo": -0.027812234993515234,
+              "hi": 0.012762124752611355,
+              "p_gt_zero": 0.246,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.5067551828558118,
+          "seconds": 172.2
+        },
+        "traj": {
+          "auroc": 0.8765454545454546,
+          "auprc": 0.9450964182922892,
+          "tpr_at_fpr10": 0.6909090909090909,
+          "ece": 0.1441186547046527,
+          "brier": 0.14550810554773053,
+          "n": 160,
+          "n_pos": 110,
+          "pos_rate": 0.6875,
+          "mean_spread": 0.08931216597557068,
+          "auroc_se": 0.026564460193062783,
+          "layer": 12,
+          "n_params": 664961,
+          "auroc_control_permuted": 0.4731583072100313,
+          "selectivity_permuted": 0.4033871473354233,
+          "auroc_control_group": 0.9627454270850814,
+          "selectivity_group": -0.08619997253962675,
+          "auroc_B0": 0.7881818181818181,
+          "auroc_B0_plus_probe": 0.8845454545454545,
+          "unique_gain_over_B0": 0.09636363636363643,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.900909090909091,
+          "auroc_B1_plus_probe": 0.9063636363636363,
+          "unique_gain_over_B1": 0.005454545454545268,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.909090909090909,
+          "auroc_B2_plus_probe": 0.9054545454545455,
+          "unique_gain_over_B2": -0.0036363636363634377,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.03436363636363626,
+            "lo": -0.08322624427289275,
+            "hi": 0.01250351731601736,
+            "p_gt_zero": 0.075,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": -0.02381818181818174,
+            "lo": -0.08486784897025186,
+            "hi": 0.0382674821765431,
+            "p_gt_zero": 0.218,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.9073378750065577,
+            "auroc_se": 0.010069826433189604,
+            "auroc_B0": 0.8075542338004681,
+            "auroc_B0_plus_probe": 0.9082210187078033,
+            "unique_gain_over_B0": 0.10066678490733516,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9000735641884319,
+            "auroc_B1_plus_probe": 0.9191584626695718,
+            "unique_gain_over_B1": 0.019084898481139922,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.9109853776640575,
+            "auroc_B2_plus_probe": 0.9243187992576056,
+            "unique_gain_over_B2": 0.013333421593548112,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.9086269307732087,
+            "vs_B2": {
+              "delta": -0.0012890557666509483,
+              "lo": -0.020275871735618935,
+              "hi": 0.01882690400284658,
+              "p_gt_zero": 0.454,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.5067551828558118,
+          "seconds": 323.8
+        }
+      },
+      "auroc_B2_oof": 0.9109090909090909
+    },
+    {
+      "model": "Qwen_Qwen2.5-0.5B-Instruct",
+      "dataset": "popqa",
+      "n": 800,
+      "clusters": 20,
+      "label_balance": {
+        "n": 800,
+        "n_pos": 665,
+        "pos_rate": 0.83125
+      },
+      "single_baselines": {
+        "mean_logprob": {
+          "auroc": 0.757689422355589,
+          "n": 160,
+          "se": 0.04225922511227526
+        },
+        "min_logprob": {
+          "auroc": 0.8284571142785696,
+          "n": 160,
+          "se": 0.03441886213460258
+        },
+        "n_new_tokens": {
+          "auroc": 0.5245061265316329,
+          "n": 160,
+          "se": 0.057259120557023944
+        },
+        "answer_chars": {
+          "auroc": 0.3862215553888472,
+          "n": 160,
+          "se": 0.058656696462376215
+        },
+        "log_popularity": {
+          "auroc": 0.7070517629407351,
+          "n": 160,
+          "se": 0.046877883836090706
+        },
+        "mean_logprob_tf": {
+          "auroc": 0.7579394848712179,
+          "n": 160,
+          "se": 0.04223443634725066
+        },
+        "min_logprob_tf": {
+          "auroc": 0.8284571142785696,
+          "n": 160,
+          "se": 0.03441886213460258
+        },
+        "mean_entropy": {
+          "auroc": 0.7299324831207802,
+          "n": 160,
+          "se": 0.04488872644967798
+        },
+        "max_entropy": {
+          "auroc": 0.8332083020755189,
+          "n": 160,
+          "se": 0.033830007888471236
+        },
+        "p_true": {
+          "auroc": 0.43785946486621663,
+          "n": 160,
+          "se": 0.05881253772694558
+        },
+        "semantic_entropy": {
+          "auroc": 0.5483870967741935,
+          "n": 160,
+          "se": 0.056445854001368284
+        },
+        "self_consistency": {
+          "auroc": 0.5,
+          "n": 160,
+          "se": 0.05792240859996389
+        },
+        "distinct_rate": {
+          "auroc": 0.532258064516129,
+          "n": 160,
+          "se": 0.057013122775652625
+        }
+      },
+      "best_single_baseline": "max_entropy",
+      "best_single_baseline_auroc": 0.8332083020755189,
+      "feature_names": [
+        "mean_logprob",
+        "min_logprob",
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ],
+      "probes": {
+        "linear": {
+          "auroc": 0.8724681170292573,
+          "auprc": 0.9666125256040927,
+          "tpr_at_fpr10": 0.6511627906976745,
+          "ece": 0.2982313538435846,
+          "brier": 0.2015518482913115,
+          "n": 160,
+          "n_pos": 129,
+          "pos_rate": 0.80625,
+          "mean_spread": 0.036923207342624664,
+          "auroc_se": 0.028628323563070626,
+          "layer": 7,
+          "n_params": 897,
+          "auroc_control_permuted": 0.5019259259259259,
+          "selectivity_permuted": 0.3705421911033314,
+          "auroc_control_group": 0.9954659161976236,
+          "selectivity_group": -0.12299779916836628,
+          "auroc_B0": 0.6802344322344323,
+          "auroc_B0_plus_probe": 0.8845567765567767,
+          "unique_gain_over_B0": 0.20432234432234442,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.7936996336996337,
+          "auroc_B1_plus_probe": 0.8616483516483516,
+          "unique_gain_over_B1": 0.06794871794871793,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.7959853479853479,
+          "auroc_B2_plus_probe": 0.8629304029304029,
+          "unique_gain_over_B2": 0.06694505494505498,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.03650912728182043,
+            "lo": -0.04367012429971995,
+            "hi": 0.12364718614718617,
+            "p_gt_zero": 0.8115,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.039259814953738426,
+            "lo": -0.04032527172648128,
+            "hi": 0.12411327831957988,
+            "p_gt_zero": 0.828,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8873739905318853,
+            "auroc_se": 0.012086140410531429,
+            "auroc_B0": 0.7305485937064885,
+            "auroc_B0_plus_probe": 0.8947925368978,
+            "unique_gain_over_B0": 0.16424394319131153,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8564188248398775,
+            "auroc_B1_plus_probe": 0.9010303536619327,
+            "unique_gain_over_B1": 0.04461152882205521,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8577554998607632,
+            "auroc_B2_plus_probe": 0.8999721526037316,
+            "unique_gain_over_B2": 0.042216652742968486,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8634252297410192,
+            "vs_B2": {
+              "delta": 0.023948760790866053,
+              "lo": -0.014806552851076585,
+              "hi": 0.06087089199282752,
+              "p_gt_zero": 0.887,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.36862334032145355,
+          "seconds": 35.5
+        },
+        "mlp": {
+          "auroc": 0.865216304076019,
+          "auprc": 0.9649762289848232,
+          "tpr_at_fpr10": 0.689922480620155,
+          "ece": 0.18114370689727363,
+          "brier": 0.15354485329479067,
+          "n": 160,
+          "n_pos": 129,
+          "pos_rate": 0.80625,
+          "mean_spread": 0.06403239071369171,
+          "auroc_se": 0.029636532276614617,
+          "layer": 7,
+          "n_params": 124929,
+          "auroc_control_permuted": 0.48711111111111105,
+          "selectivity_permuted": 0.37810519296490797,
+          "auroc_control_group": 0.9989055659787367,
+          "selectivity_group": -0.13368926190271768,
+          "auroc_B0": 0.6802344322344323,
+          "auroc_B0_plus_probe": 0.872043956043956,
+          "unique_gain_over_B0": 0.19180952380952376,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.7936996336996337,
+          "auroc_B1_plus_probe": 0.8459853479853481,
+          "unique_gain_over_B1": 0.05228571428571438,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.7959853479853479,
+          "auroc_B2_plus_probe": 0.8496923076923076,
+          "unique_gain_over_B2": 0.05370695970695971,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.02925731432858214,
+            "lo": -0.051601412538501173,
+            "hi": 0.11792697410383983,
+            "p_gt_zero": 0.7665,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.032008002000500135,
+            "lo": -0.04574769480519491,
+            "hi": 0.11585407386277667,
+            "p_gt_zero": 0.7765,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8961737677527151,
+            "auroc_se": 0.011463309697556972,
+            "auroc_B0": 0.7305485937064885,
+            "auroc_B0_plus_probe": 0.9006404901141742,
+            "unique_gain_over_B0": 0.17009189640768574,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8564188248398775,
+            "auroc_B1_plus_probe": 0.9064327485380117,
+            "unique_gain_over_B1": 0.05001392369813418,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8577554998607632,
+            "auroc_B2_plus_probe": 0.9028682818156503,
+            "unique_gain_over_B2": 0.045112781954887105,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8634252297410192,
+            "vs_B2": {
+              "delta": 0.03274853801169586,
+              "lo": -0.001058165439150668,
+              "hi": 0.06725676203178703,
+              "p_gt_zero": 0.971,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.36862334032145355,
+          "seconds": 43.6
+        },
+        "layer_attn": {
+          "auroc": 0.8804701175293823,
+          "auprc": 0.9696026171097845,
+          "tpr_at_fpr10": 0.689922480620155,
+          "ece": 0.18545037892181426,
+          "brier": 0.1563559774362143,
+          "n": 160,
+          "n_pos": 129,
+          "pos_rate": 0.80625,
+          "mean_spread": 0.03176268935203552,
+          "auroc_se": 0.027488934533764733,
+          "layer": -1,
+          "n_params": 120065,
+          "auroc_control_permuted": 0.45007407407407407,
+          "selectivity_permuted": 0.43039604345530824,
+          "auroc_control_group": 0.9915572232645403,
+          "selectivity_group": -0.11108710573515801,
+          "auroc_B0": 0.6802344322344323,
+          "auroc_B0_plus_probe": 0.8874285714285713,
+          "unique_gain_over_B0": 0.2071941391941391,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.7936996336996337,
+          "auroc_B1_plus_probe": 0.8555164835164835,
+          "unique_gain_over_B1": 0.06181684981684976,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.7959853479853479,
+          "auroc_B2_plus_probe": 0.8578021978021978,
+          "unique_gain_over_B2": 0.06181684981684987,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.044511127781945437,
+            "lo": -0.030810739668333625,
+            "hi": 0.1309326159204933,
+            "p_gt_zero": 0.871,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.04726181545386343,
+            "lo": -0.029465988556897627,
+            "hi": 0.1312269655020874,
+            "p_gt_zero": 0.883,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8980785296574769,
+            "auroc_se": 0.011326208821754941,
+            "auroc_B0": 0.7305485937064885,
+            "auroc_B0_plus_probe": 0.9015316067947647,
+            "unique_gain_over_B0": 0.17098301308827624,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8564188248398775,
+            "auroc_B1_plus_probe": 0.9048175995544417,
+            "unique_gain_over_B1": 0.04839877471456422,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8577554998607632,
+            "auroc_B2_plus_probe": 0.902979671400724,
+            "unique_gain_over_B2": 0.045224171539960833,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8634252297410192,
+            "vs_B2": {
+              "delta": 0.034653299916457714,
+              "lo": 0.001408405890201031,
+              "hi": 0.06880839127656312,
+              "p_gt_zero": 0.982,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.36862334032145355,
+          "seconds": 67.2
+        },
+        "traj": {
+          "auroc": 0.8647161790447612,
+          "auprc": 0.9663341795265743,
+          "tpr_at_fpr10": 0.6821705426356589,
+          "ece": 0.17157800230197606,
+          "brier": 0.1551763083042046,
+          "n": 160,
+          "n_pos": 129,
+          "pos_rate": 0.80625,
+          "mean_spread": 0.0516081228852272,
+          "auroc_se": 0.02970523417277881,
+          "layer": 7,
+          "n_params": 382081,
+          "auroc_control_permuted": 0.5217777777777778,
+          "selectivity_permuted": 0.3429384012669834,
+          "auroc_control_group": 0.9910881801125704,
+          "selectivity_group": -0.12637200106780921,
+          "auroc_B0": 0.6802344322344323,
+          "auroc_B0_plus_probe": 0.8650476190476191,
+          "unique_gain_over_B0": 0.1848131868131868,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.7936996336996337,
+          "auroc_B1_plus_probe": 0.8503882783882784,
+          "unique_gain_over_B1": 0.05668864468864465,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.7959853479853479,
+          "auroc_B2_plus_probe": 0.8502490842490842,
+          "unique_gain_over_B2": 0.05426373626373626,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.028757189297324293,
+            "lo": -0.04535278154681157,
+            "hi": 0.11480170901160684,
+            "p_gt_zero": 0.7605,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.03150787696924229,
+            "lo": -0.04290759595452755,
+            "hi": 0.11533336356125176,
+            "p_gt_zero": 0.785,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.9026120857699804,
+            "auroc_se": 0.010996492252433866,
+            "auroc_B0": 0.7305485937064885,
+            "auroc_B0_plus_probe": 0.9120579225842385,
+            "unique_gain_over_B0": 0.18150932887774995,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8564188248398775,
+            "auroc_B1_plus_probe": 0.9127262600946813,
+            "unique_gain_over_B1": 0.05630743525480375,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8577554998607632,
+            "auroc_B2_plus_probe": 0.9087162350320245,
+            "unique_gain_over_B2": 0.05096073517126132,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8634252297410192,
+            "vs_B2": {
+              "delta": 0.039186856028961214,
+              "lo": 0.005901609892810955,
+              "hi": 0.0730507902824779,
+              "p_gt_zero": 0.9885,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.36862334032145355,
+          "seconds": 227.1
+        }
+      },
+      "auroc_B2_oof": 0.8359589897474369
+    },
+    {
+      "model": "Qwen_Qwen2.5-1.5B-Instruct",
+      "dataset": "popqa",
+      "n": 800,
+      "clusters": 20,
+      "label_balance": {
+        "n": 800,
+        "n_pos": 627,
+        "pos_rate": 0.78375
+      },
+      "single_baselines": {
+        "mean_logprob": {
+          "auroc": 0.899641577060932,
+          "n": 160,
+          "se": 0.02413228324011302
+        },
+        "min_logprob": {
+          "auroc": 0.8897849462365591,
+          "n": 160,
+          "se": 0.025539135658043794
+        },
+        "n_new_tokens": {
+          "auroc": 0.6180555555555556,
+          "n": 160,
+          "se": 0.050572357536397945
+        },
+        "answer_chars": {
+          "auroc": 0.6351926523297492,
+          "n": 160,
+          "se": 0.049641696013270245
+        },
+        "log_popularity": {
+          "auroc": 0.7440636200716846,
+          "n": 160,
+          "se": 0.04182010700744086
+        },
+        "mean_logprob_tf": {
+          "auroc": 0.8991935483870969,
+          "n": 160,
+          "se": 0.024197338345448058
+        },
+        "min_logprob_tf": {
+          "auroc": 0.8902329749103943,
+          "n": 160,
+          "se": 0.02547626597342357
+        },
+        "mean_entropy": {
+          "auroc": 0.8604390681003584,
+          "n": 160,
+          "se": 0.02945445615367353
+        },
+        "max_entropy": {
+          "auroc": 0.8994175627240143,
+          "n": 160,
+          "se": 0.02416482437057425
+        },
+        "p_true": {
+          "auroc": 0.6088709677419355,
+          "n": 160,
+          "se": 0.05103827944897939
+        },
+        "semantic_entropy": {
+          "auroc": 0.6429211469534051,
+          "n": 160,
+          "se": 0.049195761850659527
+        },
+        "self_consistency": {
+          "auroc": 0.7072132616487455,
+          "n": 160,
+          "se": 0.04484465204275292
+        },
+        "distinct_rate": {
+          "auroc": 0.6456093189964158,
+          "n": 160,
+          "se": 0.04903681922568862
+        }
+      },
+      "best_single_baseline": "mean_logprob",
+      "best_single_baseline_auroc": 0.899641577060932,
+      "feature_names": [
+        "mean_logprob",
+        "min_logprob",
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ],
+      "probes": {
+        "linear": {
+          "auroc": 0.9030017921146953,
+          "auprc": 0.9656097269273484,
+          "tpr_at_fpr10": 0.6774193548387096,
+          "ece": 0.25822703252633794,
+          "brier": 0.16761593820378362,
+          "n": 160,
+          "n_pos": 124,
+          "pos_rate": 0.775,
+          "mean_spread": 0.037476908415555954,
+          "auroc_se": 0.023640866523994733,
+          "layer": 18,
+          "n_params": 1537,
+          "auroc_control_permuted": 0.5163445478406108,
+          "selectivity_permuted": 0.38665724427408454,
+          "auroc_control_group": 0.9769742759489116,
+          "selectivity_group": -0.07397248383421628,
+          "auroc_B0": 0.7379345238095236,
+          "auroc_B0_plus_probe": 0.9113035714285713,
+          "unique_gain_over_B0": 0.1733690476190477,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9198392857142856,
+          "auroc_B1_plus_probe": 0.9266964285714288,
+          "unique_gain_over_B1": 0.006857142857143117,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9084107142857143,
+          "auroc_B2_plus_probe": 0.9152678571428572,
+          "unique_gain_over_B2": 0.006857142857142895,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.0058243727598567,
+            "lo": -0.06386459642508041,
+            "hi": 0.05428126402355133,
+            "p_gt_zero": 0.434,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.0033602150537633824,
+            "lo": -0.060001332240213104,
+            "hi": 0.06980015749735748,
+            "p_gt_zero": 0.539,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8863290649113588,
+            "auroc_se": 0.011633595355306472,
+            "auroc_B0": 0.7555595144724556,
+            "auroc_B0_plus_probe": 0.8940706629318393,
+            "unique_gain_over_B0": 0.13851114845938373,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9006807843137254,
+            "auroc_B1_plus_probe": 0.9142060877684408,
+            "unique_gain_over_B1": 0.013525303454715365,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.89856918767507,
+            "auroc_B2_plus_probe": 0.9137956302521009,
+            "unique_gain_over_B2": 0.015226442577030874,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8949396612919582,
+            "vs_B2": {
+              "delta": -0.008610596380599467,
+              "lo": -0.034959674957767195,
+              "hi": 0.015344035120453061,
+              "p_gt_zero": 0.2305,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 37.3
+        },
+        "mlp": {
+          "auroc": 0.8998655913978495,
+          "auprc": 0.9649570132277385,
+          "tpr_at_fpr10": 0.6612903225806451,
+          "ece": 0.14852461050031704,
+          "brier": 0.1271959323035971,
+          "n": 160,
+          "n_pos": 124,
+          "pos_rate": 0.775,
+          "mean_spread": 0.03487961366772652,
+          "auroc_se": 0.024099714894958532,
+          "layer": 18,
+          "n_params": 208129,
+          "auroc_control_permuted": 0.48914340252922933,
+          "selectivity_permuted": 0.41072218886862016,
+          "auroc_control_group": 0.9955027882712719,
+          "selectivity_group": -0.09563719687342243,
+          "auroc_B0": 0.7379345238095236,
+          "auroc_B0_plus_probe": 0.9038095238095238,
+          "unique_gain_over_B0": 0.16587500000000022,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9198392857142856,
+          "auroc_B1_plus_probe": 0.9232678571428572,
+          "unique_gain_over_B1": 0.0034285714285715585,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9084107142857143,
+          "auroc_B2_plus_probe": 0.9130833333333334,
+          "unique_gain_over_B2": 0.004672619047619064,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.008960573476702538,
+            "lo": -0.06880931837791193,
+            "hi": 0.05443548387096775,
+            "p_gt_zero": 0.389,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.00022401433691754402,
+            "lo": -0.06294972180545133,
+            "hi": 0.06653121065375296,
+            "p_gt_zero": 0.496,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8895741718984799,
+            "auroc_se": 0.011428576366855512,
+            "auroc_B0": 0.7555595144724556,
+            "auroc_B0_plus_probe": 0.8945483473389355,
+            "unique_gain_over_B0": 0.1389888328664799,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9006807843137254,
+            "auroc_B1_plus_probe": 0.9148772362278244,
+            "unique_gain_over_B1": 0.014196451914098906,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.89856918767507,
+            "auroc_B2_plus_probe": 0.9132607282913165,
+            "unique_gain_over_B2": 0.014691540616246557,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8949396612919582,
+            "vs_B2": {
+              "delta": -0.005365489393478362,
+              "lo": -0.031114932440430267,
+              "hi": 0.01860527768957686,
+              "p_gt_zero": 0.334,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 43.9
+        },
+        "layer_attn": {
+          "auroc": 0.9007616487455197,
+          "auprc": 0.9672859763603108,
+          "tpr_at_fpr10": 0.7258064516129032,
+          "ece": 0.14495142046362158,
+          "brier": 0.12423454184027949,
+          "n": 160,
+          "n_pos": 124,
+          "pos_rate": 0.775,
+          "mean_spread": 0.04520212486386299,
+          "auroc_se": 0.023969168172325892,
+          "layer": -1,
+          "n_params": 203777,
+          "auroc_control_permuted": 0.5468861846814602,
+          "selectivity_permuted": 0.35387546406405945,
+          "auroc_control_group": 0.9771541644180608,
+          "selectivity_group": -0.07639251567254113,
+          "auroc_B0": 0.7379345238095236,
+          "auroc_B0_plus_probe": 0.8977916666666665,
+          "unique_gain_over_B0": 0.15985714285714292,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9198392857142856,
+          "auroc_B1_plus_probe": 0.9242083333333333,
+          "unique_gain_over_B1": 0.004369047619047661,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9084107142857143,
+          "auroc_B2_plus_probe": 0.9119404761904761,
+          "unique_gain_over_B2": 0.003529761904761841,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.008064516129032362,
+            "lo": -0.06537860042254837,
+            "hi": 0.049075940860214974,
+            "p_gt_zero": 0.394,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.00112007168458772,
+            "lo": -0.057119050495069164,
+            "hi": 0.06440134193212166,
+            "p_gt_zero": 0.5025,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8726756460252049,
+            "auroc_se": 0.012472135962258232,
+            "auroc_B0": 0.7555595144724556,
+            "auroc_B0_plus_probe": 0.882711335200747,
+            "unique_gain_over_B0": 0.12715182072829134,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9006807843137254,
+            "auroc_B1_plus_probe": 0.9121606722689076,
+            "unique_gain_over_B1": 0.011479887955182178,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.89856918767507,
+            "auroc_B2_plus_probe": 0.9113319887955182,
+            "unique_gain_over_B2": 0.012762801120448253,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8949396612919582,
+            "vs_B2": {
+              "delta": -0.022264015266753368,
+              "lo": -0.04845992975774216,
+              "hi": 0.0005719832733269743,
+              "p_gt_zero": 0.032,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 101.8
+        },
+        "traj": {
+          "auroc": 0.9083781362007168,
+          "auprc": 0.9684339074914571,
+          "tpr_at_fpr10": 0.75,
+          "ece": 0.15361106782220305,
+          "brier": 0.12658005453866444,
+          "n": 160,
+          "n_pos": 124,
+          "pos_rate": 0.775,
+          "mean_spread": 0.06839443743228912,
+          "auroc_se": 0.022841327909721775,
+          "layer": 18,
+          "n_params": 465281,
+          "auroc_control_permuted": 0.4569315199236459,
+          "selectivity_permuted": 0.45144661627707094,
+          "auroc_control_group": 0.9910055765425436,
+          "selectivity_group": -0.08262744034182679,
+          "auroc_B0": 0.7379345238095236,
+          "auroc_B0_plus_probe": 0.9054880952380951,
+          "unique_gain_over_B0": 0.16755357142857152,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.9198392857142856,
+          "auroc_B1_plus_probe": 0.9253511904761906,
+          "unique_gain_over_B1": 0.0055119047619049955,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.9084107142857143,
+          "auroc_B2_plus_probe": 0.9164107142857143,
+          "unique_gain_over_B2": 0.008000000000000007,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.00044802867383519906,
+            "lo": -0.05580765641307897,
+            "hi": 0.05944011316767212,
+            "p_gt_zero": 0.4995,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.008736559139784883,
+            "lo": -0.04975046501457988,
+            "hi": 0.07168667166791698,
+            "p_gt_zero": 0.6025,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8805210609287275,
+            "auroc_se": 0.011994951640642874,
+            "auroc_B0": 0.7555595144724556,
+            "auroc_B0_plus_probe": 0.8887784873949579,
+            "unique_gain_over_B0": 0.1332189729225023,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.9006807843137254,
+            "auroc_B1_plus_probe": 0.913554360410831,
+            "unique_gain_over_B1": 0.012873576097105599,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.89856918767507,
+            "auroc_B2_plus_probe": 0.9121673949579833,
+            "unique_gain_over_B2": 0.013598207282913277,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8949396612919582,
+            "vs_B2": {
+              "delta": -0.014418600363230727,
+              "lo": -0.040559689941070676,
+              "hi": 0.010185256184557121,
+              "p_gt_zero": 0.126,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.4811320754716982,
+          "seconds": 267.8
+        }
+      },
+      "auroc_B2_oof": 0.908826164874552
+    },
+    {
+      "model": "Qwen_Qwen2.5-3B-Instruct",
+      "dataset": "popqa",
+      "n": 800,
+      "clusters": 20,
+      "label_balance": {
+        "n": 800,
+        "n_pos": 623,
+        "pos_rate": 0.77875
+      },
+      "single_baselines": {
+        "mean_logprob": {
+          "auroc": 0.7871009490940466,
+          "n": 160,
+          "se": 0.03732145677160822
+        },
+        "min_logprob": {
+          "auroc": 0.7402933563416739,
+          "n": 160,
+          "se": 0.041577866722058196
+        },
+        "n_new_tokens": {
+          "auroc": 0.44176013805004327,
+          "n": 160,
+          "se": 0.05442543293156664
+        },
+        "answer_chars": {
+          "auroc": 0.4352890422778257,
+          "n": 160,
+          "se": 0.05443770632149856
+        },
+        "log_popularity": {
+          "auroc": 0.8019844693701468,
+          "n": 160,
+          "se": 0.035824797040344705
+        },
+        "mean_logprob_tf": {
+          "auroc": 0.7877480586712683,
+          "n": 160,
+          "se": 0.03725786847764964
+        },
+        "min_logprob_tf": {
+          "auroc": 0.7428817946505608,
+          "n": 160,
+          "se": 0.0413597116048995
+        },
+        "mean_entropy": {
+          "auroc": 0.8011216566005177,
+          "n": 160,
+          "se": 0.0359135291808531
+        },
+        "max_entropy": {
+          "auroc": 0.7853753235547887,
+          "n": 160,
+          "se": 0.03749037434371361
+        },
+        "p_true": {
+          "auroc": 0.704702329594478,
+          "n": 160,
+          "se": 0.04438098973465254
+        },
+        "semantic_entropy": {
+          "auroc": 0.5558671268334772,
+          "n": 160,
+          "se": 0.05233423392878911
+        },
+        "self_consistency": {
+          "auroc": 0.526962899050906,
+          "n": 160,
+          "se": 0.05319426021080093
+        },
+        "distinct_rate": {
+          "auroc": 0.5556514236410699,
+          "n": 160,
+          "se": 0.052341472172978395
+        }
+      },
+      "best_single_baseline": "log_popularity",
+      "best_single_baseline_auroc": 0.8019844693701468,
+      "feature_names": [
+        "mean_logprob",
+        "min_logprob",
+        "n_new_tokens",
+        "answer_chars",
+        "log_popularity",
+        "mean_logprob_tf",
+        "min_logprob_tf",
+        "mean_entropy",
+        "max_entropy",
+        "p_true",
+        "semantic_entropy",
+        "self_consistency",
+        "distinct_rate"
+      ],
+      "probes": {
+        "linear": {
+          "auroc": 0.8584987057808455,
+          "auprc": 0.9510442788559295,
+          "tpr_at_fpr10": 0.6557377049180327,
+          "ece": 0.2725448623299599,
+          "brier": 0.20003287724574892,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.04478297382593155,
+          "auroc_se": 0.029446338783022934,
+          "layer": 32,
+          "n_params": 2049,
+          "auroc_control_permuted": 0.485107421875,
+          "selectivity_permuted": 0.37339128390584553,
+          "auroc_control_group": 0.9784515636918383,
+          "selectivity_group": -0.11995285791099275,
+          "auroc_B0": 0.7906011904761906,
+          "auroc_B0_plus_probe": 0.8704761904761904,
+          "unique_gain_over_B0": 0.07987499999999981,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.8386904761904763,
+          "auroc_B1_plus_probe": 0.8688988095238097,
+          "unique_gain_over_B1": 0.030208333333333393,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.8658750000000002,
+          "auroc_B2_plus_probe": 0.8901369047619049,
+          "unique_gain_over_B2": 0.024261904761904707,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.010785159620362306,
+            "lo": -0.07749189580133116,
+            "hi": 0.09528954817817972,
+            "p_gt_zero": 0.594,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.05651423641069875,
+            "lo": -0.0356239563925256,
+            "hi": 0.1568895411883217,
+            "p_gt_zero": 0.884,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8831152342864399,
+            "auroc_se": 0.01179540078194287,
+            "auroc_B0": 0.7786331694828469,
+            "auroc_B0_plus_probe": 0.8947613108038915,
+            "unique_gain_over_B0": 0.11612814132104465,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8572317562724014,
+            "auroc_B1_plus_probe": 0.9057422836661546,
+            "unique_gain_over_B1": 0.04851052739375317,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8726890834613416,
+            "auroc_B2_plus_probe": 0.9128428673835124,
+            "unique_gain_over_B2": 0.04015378392217084,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8681611665805153,
+            "vs_B2": {
+              "delta": 0.014954067705924556,
+              "lo": -0.019198310275285606,
+              "hi": 0.04938361230173987,
+              "p_gt_zero": 0.7895,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.38714185883997204,
+          "seconds": 43.1
+        },
+        "mlp": {
+          "auroc": 0.8438308886971526,
+          "auprc": 0.9481159843083473,
+          "tpr_at_fpr10": 0.5901639344262295,
+          "ece": 0.17216316385893154,
+          "brier": 0.1684035698700175,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.051179032772779465,
+          "auroc_se": 0.031214450011573313,
+          "layer": 32,
+          "n_params": 274689,
+          "auroc_control_permuted": 0.477294921875,
+          "selectivity_permuted": 0.3665359668221526,
+          "auroc_control_group": 0.988558352402746,
+          "selectivity_group": -0.14472746370559342,
+          "auroc_B0": 0.7906011904761906,
+          "auroc_B0_plus_probe": 0.8570357142857142,
+          "unique_gain_over_B0": 0.06643452380952364,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.8386904761904763,
+          "auroc_B1_plus_probe": 0.8647321428571428,
+          "unique_gain_over_B1": 0.02604166666666652,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.8658750000000002,
+          "auroc_B2_plus_probe": 0.8858690476190476,
+          "unique_gain_over_B2": 0.01999404761904744,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.0038826574633306077,
+            "lo": -0.08895980900522311,
+            "hi": 0.07883195978115762,
+            "p_gt_zero": 0.456,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.041846419327005835,
+            "lo": -0.05496355634936564,
+            "hi": 0.1384462447042675,
+            "p_gt_zero": 0.8235,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8782816878417716,
+            "auroc_se": 0.01209071024265298,
+            "auroc_B0": 0.7786331694828469,
+            "auroc_B0_plus_probe": 0.8958648335893497,
+            "unique_gain_over_B0": 0.11723166410650276,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8572317562724014,
+            "auroc_B1_plus_probe": 0.9075424577572966,
+            "unique_gain_over_B1": 0.05031070148489514,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8726890834613416,
+            "auroc_B2_plus_probe": 0.9171656733230927,
+            "unique_gain_over_B2": 0.04447658986175118,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8681611665805153,
+            "vs_B2": {
+              "delta": 0.010120521261256288,
+              "lo": -0.0251699762725136,
+              "hi": 0.04659416760104621,
+              "p_gt_zero": 0.7085,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.38714185883997204,
+          "seconds": 51.1
+        },
+        "layer_attn": {
+          "auroc": 0.8358498705780847,
+          "auprc": 0.9464988622333463,
+          "tpr_at_fpr10": 0.5819672131147541,
+          "ece": 0.160109359154012,
+          "brier": 0.1755115543083016,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.04480646923184395,
+          "auroc_se": 0.03214190084965442,
+          "layer": -1,
+          "n_params": 271361,
+          "auroc_control_permuted": 0.455322265625,
+          "selectivity_permuted": 0.3805276049530847,
+          "auroc_control_group": 0.9826468344774981,
+          "selectivity_group": -0.14679696389941344,
+          "auroc_B0": 0.7906011904761906,
+          "auroc_B0_plus_probe": 0.854547619047619,
+          "unique_gain_over_B0": 0.0639464285714284,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.8386904761904763,
+          "auroc_B1_plus_probe": 0.8647321428571428,
+          "unique_gain_over_B1": 0.02604166666666652,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.8658750000000002,
+          "auroc_B2_plus_probe": 0.8840892857142857,
+          "unique_gain_over_B2": 0.018214285714285516,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": -0.011863675582398536,
+            "lo": -0.0978346456692914,
+            "hi": 0.07095349503437703,
+            "p_gt_zero": 0.3795,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.033865401207937906,
+            "lo": -0.060189763245099275,
+            "hi": 0.12973608049341684,
+            "p_gt_zero": 0.7605,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.8923923787759247,
+            "auroc_se": 0.011214772173272797,
+            "auroc_B0": 0.7786331694828469,
+            "auroc_B0_plus_probe": 0.9029883461341527,
+            "unique_gain_over_B0": 0.1243551766513058,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8572317562724014,
+            "auroc_B1_plus_probe": 0.9096491039426523,
+            "unique_gain_over_B1": 0.05241734767025086,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8726890834613416,
+            "auroc_B2_plus_probe": 0.9173896876600102,
+            "unique_gain_over_B2": 0.044700604198668614,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8681611665805153,
+            "vs_B2": {
+              "delta": 0.024231212195409357,
+              "lo": -0.007178847626634561,
+              "hi": 0.055775260669936357,
+              "p_gt_zero": 0.929,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.38714185883997204,
+          "seconds": 146.1
+        },
+        "traj": {
+          "auroc": 0.8723037100949095,
+          "auprc": 0.9553595890373889,
+          "tpr_at_fpr10": 0.5737704918032787,
+          "ece": 0.15348611066583542,
+          "brier": 0.14825429385977393,
+          "n": 160,
+          "n_pos": 122,
+          "pos_rate": 0.7625,
+          "mean_spread": 0.07705594599246979,
+          "auroc_se": 0.02770242322477356,
+          "layer": 32,
+          "n_params": 531841,
+          "auroc_control_permuted": 0.41748046875,
+          "selectivity_permuted": 0.4548232413449095,
+          "auroc_control_group": 0.9815026697177727,
+          "selectivity_group": -0.10919895962286319,
+          "auroc_B0": 0.7906011904761906,
+          "auroc_B0_plus_probe": 0.873267857142857,
+          "unique_gain_over_B0": 0.08266666666666644,
+          "feats_B0": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity"
+          ],
+          "auroc_B1": 0.8386904761904763,
+          "auroc_B1_plus_probe": 0.8743095238095238,
+          "unique_gain_over_B1": 0.03561904761904744,
+          "feats_B1": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy"
+          ],
+          "auroc_B2": 0.8658750000000002,
+          "auroc_B2_plus_probe": 0.8922202380952381,
+          "unique_gain_over_B2": 0.02634523809523792,
+          "feats_B2": [
+            "n_new_tokens",
+            "answer_chars",
+            "log_popularity",
+            "mean_logprob",
+            "min_logprob",
+            "mean_logprob_tf",
+            "min_logprob_tf",
+            "mean_entropy",
+            "max_entropy",
+            "p_true",
+            "semantic_entropy",
+            "self_consistency",
+            "distinct_rate"
+          ],
+          "vs_B2": {
+            "delta": 0.024590163934426257,
+            "lo": -0.05327459123883932,
+            "hi": 0.10449777495232027,
+            "p_gt_zero": 0.74,
+            "n_boot": 2000
+          },
+          "vs_best_single": {
+            "delta": 0.0703192407247627,
+            "lo": -0.019759601406056624,
+            "hi": 0.16603925353925345,
+            "p_gt_zero": 0.933,
+            "n_boot": 2000
+          },
+          "crossfit": {
+            "n": 800,
+            "auroc": 0.9004180609589104,
+            "auroc_se": 0.010696914243694792,
+            "auroc_B0": 0.7786331694828469,
+            "auroc_B0_plus_probe": 0.910060532514081,
+            "unique_gain_over_B0": 0.13142736303123415,
+            "feats_B0": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity"
+            ],
+            "auroc_B1": 0.8572317562724014,
+            "auroc_B1_plus_probe": 0.9144162928827445,
+            "unique_gain_over_B1": 0.05718453661034306,
+            "feats_B1": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy"
+            ],
+            "auroc_B2": 0.8726890834613416,
+            "auroc_B2_plus_probe": 0.9224622939068101,
+            "unique_gain_over_B2": 0.04977321044546856,
+            "feats_B2": [
+              "n_new_tokens",
+              "answer_chars",
+              "log_popularity",
+              "mean_logprob",
+              "min_logprob",
+              "mean_logprob_tf",
+              "min_logprob_tf",
+              "mean_entropy",
+              "max_entropy",
+              "p_true",
+              "semantic_entropy",
+              "self_consistency",
+              "distinct_rate"
+            ],
+            "auroc_B2_oof": 0.8681611665805153,
+            "vs_B2": {
+              "delta": 0.03225689437839507,
+              "lo": -0.000372700408171539,
+              "hi": 0.0642092793342579,
+              "p_gt_zero": 0.974,
+              "n_boot": 2000
+            }
+          },
+          "artefact_task_acc": 0.38714185883997204,
+          "seconds": 294.6
+        }
+      },
+      "auroc_B2_oof": 0.8477135461604832
+    }
+  ]
+}

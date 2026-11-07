@@ -1,0 +1,18 @@
+02:20:11  could not set the sleep guard: Cannot convert argument "esFlags", with value: "-2147483583", for "SetThreadExecutionState" to type "System.UInt32": "Cannot convert value "-2147483583" to type "System.UInt32". Error: "Value was either too large or too small for a UInt32.""
+02:20:11  if the laptop sleeps, just re-run this script -- it resumes where it stopped
+02:20:11  Review 3 unattended run
+02:20:11  log:    D:\Deep Learning\hallu-probe\logs\review3-20261013-022010.log
+02:20:11  status: D:\Deep Learning\hallu-probe\out\review3_status.json  <- read this one in the morning
+02:20:11  gpu: NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 0 MiB
+02:20:11  
+02:20:11  === working sets already on disk; verifying instead of rebuilding
+02:20:12  
+02:20:12  === verify cache alignment
+02:20:15      ok in 0.1 min
+02:20:15  
+02:20:15  === extract Qwen2.5-3B-Instruct popqa -- cache already on disk, GPU skipped
+02:20:15  
+02:20:15  === baselines Qwen2.5-3B-Instruct popqa
+03:08:23      ok in 48.1 min
+03:08:23  
+03:08:23  === extract Qwen2.5-3B-Instruct triviaqa

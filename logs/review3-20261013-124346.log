@@ -1,0 +1,41 @@
+12:43:46  Review 3 unattended run
+12:43:46  log:    D:\Deep Learning\hallu-probe\logs\review3-20261013-124346.log
+12:43:46  status: D:\Deep Learning\hallu-probe\out\review3_status.json  <- read this one in the morning
+12:43:46  sleep guard on: Windows stays awake until this exits
+12:43:47  gpu: NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 0 MiB
+12:43:48  power: on mains, AC idle-sleep disabled
+12:43:48  
+12:43:48  ### STAGE 0 -- decoding pre-flight, about two minutes per model
+12:43:48  
+12:43:48  === decoding check Qwen2.5-3B-Instruct
+12:45:49      ok in 2 min
+12:45:49  
+12:45:49  === decoding check Llama-3.2-3B-Instruct
+12:47:17      ok in 1.5 min
+12:47:17  
+12:47:17  === decoding check Qwen2.5-1.5B-Instruct
+12:48:09      ok in 0.9 min
+12:48:09  
+12:48:09  === decoding check Llama-3.2-1B-Instruct
+12:48:47      ok in 0.6 min
+12:48:47  
+12:48:47  === decoding check Qwen2.5-0.5B-Instruct
+12:49:56      ok in 1.1 min
+12:49:56  
+12:49:56  ### which caches survive the pre-flight
+12:49:56  
+12:49:56  === quarantine stale caches
+12:49:56      ok in 0 min
+12:49:56  stale caches are MOVED to out\_quarantine_predecoding\, never deleted:
+12:49:56  the size of the decoding effect is itself a result worth reporting.
+12:49:56  
+12:49:56  === working sets already on disk; verifying instead of rebuilding
+12:49:56  
+12:49:56  === verify cache alignment
+12:49:57      failed after 0 min (exit 1, looks like: unknown)
+12:49:57      giving up on this step and carrying on
+12:49:57  
+12:49:57  STOPPING: a cache on disk does not line up with its working set.
+12:49:57  Running the analysis on it would attach labels to the wrong questions.
+12:49:57  See the log above, then either restore the working set those caches
+12:49:57  were built from, or delete the mismatched cache and re-extract.

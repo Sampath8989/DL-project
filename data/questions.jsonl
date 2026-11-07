@@ -1,0 +1,219 @@
+{"question": "How many bones are in the adult human body?", "gold": ["206"], "task": "easy"}
+{"question": "How many continents are there on Earth?", "gold": ["seven", "7"], "task": "easy"}
+{"question": "How many minutes are there in a full day?", "gold": ["1440", "1,440"], "task": "easy"}
+{"question": "How many players from one team are on the pitch in football?", "gold": ["eleven", "11"], "task": "easy"}
+{"question": "How many sides does a hexagon have?", "gold": ["six", "6"], "task": "easy"}
+{"question": "How many strings does a standard guitar have?", "gold": ["six", "6"], "task": "easy"}
+{"question": "In which continent is the Sahara desert?", "gold": ["africa"], "task": "easy"}
+{"question": "In which country are the Pyramids of Giza?", "gold": ["egypt"], "task": "easy"}
+{"question": "What does DNA stand for?", "gold": ["deoxyribonucleic"], "task": "easy"}
+{"question": "What gas do plants absorb for photosynthesis?", "gold": ["carbon dioxide", "CO2"], "task": "easy"}
+{"question": "What gas do plants absorb from the air for photosynthesis?", "gold": ["carbon dioxide", "co2"], "task": "easy"}
+{"question": "What is the boiling point of water at sea level in Celsius?", "gold": ["100"], "task": "easy"}
+{"question": "What is the capital city of Australia?", "gold": ["canberra"], "task": "easy"}
+{"question": "What is the capital city of Brazil?", "gold": ["brasilia", "brasília"], "task": "easy"}
+{"question": "What is the capital city of Canada?", "gold": ["ottawa"], "task": "easy"}
+{"question": "What is the capital city of Egypt?", "gold": ["cairo"], "task": "easy"}
+{"question": "What is the capital city of France?", "gold": ["paris"], "task": "easy"}
+{"question": "What is the capital city of Italy?", "gold": ["rome"], "task": "easy"}
+{"question": "What is the capital city of Japan?", "gold": ["tokyo"], "task": "easy"}
+{"question": "What is the capital city of Kenya?", "gold": ["nairobi"], "task": "easy"}
+{"question": "What is the capital of Australia?", "gold": ["Canberra"], "task": "easy"}
+{"question": "What is the capital of Brazil?", "gold": ["Brasilia", "Brasília"], "task": "easy"}
+{"question": "What is the capital of Canada?", "gold": ["Ottawa"], "task": "easy"}
+{"question": "What is the capital of China?", "gold": ["Beijing", "Peking"], "task": "easy"}
+{"question": "What is the capital of Egypt?", "gold": ["Cairo"], "task": "easy"}
+{"question": "What is the capital of France?", "gold": ["Paris"], "task": "easy"}
+{"question": "What is the capital of Germany?", "gold": ["Berlin"], "task": "easy"}
+{"question": "What is the capital of India?", "gold": ["New Delhi", "Delhi"], "task": "easy"}
+{"question": "What is the capital of Italy?", "gold": ["Rome"], "task": "easy"}
+{"question": "What is the capital of Japan?", "gold": ["Tokyo"], "task": "easy"}
+{"question": "What is the capital of Mexico?", "gold": ["Mexico City"], "task": "easy"}
+{"question": "What is the capital of Russia?", "gold": ["Moscow"], "task": "easy"}
+{"question": "What is the capital of South Korea?", "gold": ["Seoul"], "task": "easy"}
+{"question": "What is the capital of Spain?", "gold": ["Madrid"], "task": "easy"}
+{"question": "What is the chemical formula for water?", "gold": ["H2O", "H₂O"], "task": "easy"}
+{"question": "What is the chemical symbol for gold?", "gold": ["au"], "task": "easy"}
+{"question": "What is the chemical symbol for iron?", "gold": ["Fe"], "task": "easy"}
+{"question": "What is the chemical symbol for oxygen?", "gold": ["O"], "task": "easy"}
+{"question": "What is the chemical symbol for sodium?", "gold": ["na"], "task": "easy"}
+{"question": "What is the currency of Japan?", "gold": ["yen"], "task": "easy"}
+{"question": "What is the freezing point of water in Celsius?", "gold": ["0", "zero"], "task": "easy"}
+{"question": "What is the freezing point of water in degrees Celsius?", "gold": ["0", "zero"], "task": "easy"}
+{"question": "What is the largest mammal on Earth?", "gold": ["blue whale", "whale"], "task": "easy"}
+{"question": "What is the largest mammal?", "gold": ["blue whale", "whale"], "task": "easy"}
+{"question": "What is the largest ocean on Earth?", "gold": ["pacific"], "task": "easy"}
+{"question": "What is the largest planet in the Solar System?", "gold": ["Jupiter"], "task": "easy"}
+{"question": "What is the longest river in Africa?", "gold": ["nile"], "task": "easy"}
+{"question": "What is the smallest prime number?", "gold": ["2", "two"], "task": "easy"}
+{"question": "What is the square root of 144?", "gold": ["12", "twelve"], "task": "easy"}
+{"question": "What is the tallest mountain above sea level?", "gold": ["everest"], "task": "easy"}
+{"question": "Which country gifted the Statue of Liberty to the United States?", "gold": ["France"], "task": "easy"}
+{"question": "Which country is the Great Wall located in?", "gold": ["china"], "task": "easy"}
+{"question": "Which is the largest continent by land area?", "gold": ["Asia"], "task": "easy"}
+{"question": "Which language has the most native speakers in the world?", "gold": ["chinese", "mandarin"], "task": "easy"}
+{"question": "Which organ in the human body pumps blood?", "gold": ["heart"], "task": "easy"}
+{"question": "Which organ pumps blood through the human body?", "gold": ["heart"], "task": "easy"}
+{"question": "Which planet has the most prominent ring system?", "gold": ["Saturn"], "task": "easy"}
+{"question": "Which planet is closest to the Sun?", "gold": ["mercury"], "task": "easy"}
+{"question": "Which planet is known as the Red Planet?", "gold": ["mars"], "task": "easy"}
+{"question": "Which vitamin does human skin produce in sunlight?", "gold": ["vitamin D", "D"], "task": "easy"}
+{"question": "Who composed the symphony containing the Ode to Joy?", "gold": ["Beethoven"], "task": "easy"}
+{"question": "Who painted the Mona Lisa?", "gold": ["leonardo", "da vinci"], "task": "easy"}
+{"question": "Who wrote On the Origin of Species?", "gold": ["Darwin"], "task": "easy"}
+{"question": "Who wrote Pride and Prejudice?", "gold": ["Austen"], "task": "easy"}
+{"question": "Who wrote Romeo and Juliet?", "gold": ["Shakespeare"], "task": "easy"}
+{"question": "Who wrote the novel 1984?", "gold": ["Orwell"], "task": "easy"}
+{"question": "Who wrote the play Hamlet?", "gold": ["Shakespeare"], "task": "easy"}
+{"question": "Who wrote the play Romeo and Juliet?", "gold": ["shakespeare"], "task": "easy"}
+{"question": "In what year did the Second World War end?", "gold": ["1945"], "task": "medium"}
+{"question": "In what year was the first iPhone released?", "gold": ["2007"], "task": "medium"}
+{"question": "In which year did India gain independence?", "gold": ["1947"], "task": "medium"}
+{"question": "In which year did the Berlin Wall fall?", "gold": ["1989"], "task": "medium"}
+{"question": "In which year did the Chernobyl disaster occur?", "gold": ["1986"], "task": "medium"}
+{"question": "In which year did the Second World War end?", "gold": ["1945"], "task": "medium"}
+{"question": "In which year did the Titanic sink?", "gold": ["1912"], "task": "medium"}
+{"question": "What does the acronym GPU stand for?", "gold": ["graphics processing unit"], "task": "medium"}
+{"question": "What is the capital of Argentina?", "gold": ["Buenos Aires"], "task": "medium"}
+{"question": "What is the capital of Austria?", "gold": ["Vienna", "Wien"], "task": "medium"}
+{"question": "What is the capital of Chile?", "gold": ["Santiago"], "task": "medium"}
+{"question": "What is the capital of Greece?", "gold": ["Athens"], "task": "medium"}
+{"question": "What is the capital of Kenya?", "gold": ["Nairobi"], "task": "medium"}
+{"question": "What is the capital of Morocco?", "gold": ["Rabat"], "task": "medium"}
+{"question": "What is the capital of Nigeria?", "gold": ["Abuja"], "task": "medium"}
+{"question": "What is the capital of Norway?", "gold": ["Oslo"], "task": "medium"}
+{"question": "What is the capital of Peru?", "gold": ["Lima"], "task": "medium"}
+{"question": "What is the capital of Poland?", "gold": ["Warsaw"], "task": "medium"}
+{"question": "What is the capital of Portugal?", "gold": ["Lisbon"], "task": "medium"}
+{"question": "What is the capital of Sweden?", "gold": ["Stockholm"], "task": "medium"}
+{"question": "What is the capital of Switzerland?", "gold": ["bern"], "task": "medium"}
+{"question": "What is the capital of Thailand?", "gold": ["Bangkok"], "task": "medium"}
+{"question": "What is the capital of the Indian state of Kerala?", "gold": ["thiruvananthapuram", "trivandrum"], "task": "medium"}
+{"question": "What is the capital of Turkey?", "gold": ["Ankara"], "task": "medium"}
+{"question": "What is the capital of Vietnam?", "gold": ["Hanoi"], "task": "medium"}
+{"question": "What is the chemical formula of table salt?", "gold": ["nacl"], "task": "medium"}
+{"question": "What is the chemical symbol for silver?", "gold": ["Ag"], "task": "medium"}
+{"question": "What is the hardest naturally occurring mineral?", "gold": ["diamond"], "task": "medium"}
+{"question": "What is the hardest naturally occurring substance?", "gold": ["diamond"], "task": "medium"}
+{"question": "What is the largest desert in the world by area?", "gold": ["antarctic", "antarctica"], "task": "medium"}
+{"question": "What is the largest hot desert in the world?", "gold": ["Sahara"], "task": "medium"}
+{"question": "What is the largest island in the world?", "gold": ["greenland"], "task": "medium"}
+{"question": "What is the powerhouse of the cell?", "gold": ["mitochondri"], "task": "medium"}
+{"question": "What is the scientific study of earthquakes called?", "gold": ["seismology"], "task": "medium"}
+{"question": "What is the SI unit of electric current?", "gold": ["ampere", "amp"], "task": "medium"}
+{"question": "What is the SI unit of electrical resistance?", "gold": ["ohm"], "task": "medium"}
+{"question": "What is the smallest prime number greater than 20?", "gold": ["23"], "task": "medium"}
+{"question": "Which acid is present in the human stomach?", "gold": ["hydrochloric", "hcl"], "task": "medium"}
+{"question": "Which blood group is known as the universal donor?", "gold": ["o negative", "o-"], "task": "medium"}
+{"question": "Which country hosted the 2016 Summer Olympics?", "gold": ["brazil"], "task": "medium"}
+{"question": "Which element has atomic number 6?", "gold": ["carbon"], "task": "medium"}
+{"question": "Which element has the atomic number 6?", "gold": ["carbon"], "task": "medium"}
+{"question": "Which gas makes up about 78 percent of Earth's atmosphere?", "gold": ["nitrogen"], "task": "medium"}
+{"question": "Which gas makes up about 78 percent of the Earth's atmosphere?", "gold": ["nitrogen"], "task": "medium"}
+{"question": "Which Greek mathematician is known for a theorem about right triangles?", "gold": ["Pythagoras"], "task": "medium"}
+{"question": "Which is the smallest country in the world by area?", "gold": ["Vatican"], "task": "medium"}
+{"question": "Which landlocked salt lake between Israel and Jordan is famous for its salinity?", "gold": ["Dead Sea"], "task": "medium"}
+{"question": "Which metal is liquid at room temperature?", "gold": ["mercury"], "task": "medium"}
+{"question": "Which organelle is described as the powerhouse of the cell?", "gold": ["mitochond"], "task": "medium"}
+{"question": "Which planet has the most moons discovered so far?", "gold": ["saturn"], "task": "medium"}
+{"question": "Which planet is famous for its Great Red Spot?", "gold": ["Jupiter"], "task": "medium"}
+{"question": "Which programming language was created by Guido van Rossum?", "gold": ["python"], "task": "medium"}
+{"question": "Which river flows through the city of Varanasi?", "gold": ["ganga", "ganges"], "task": "medium"}
+{"question": "Which scientist formulated the three laws of motion?", "gold": ["Newton"], "task": "medium"}
+{"question": "Which scientist proposed the three laws of motion?", "gold": ["newton"], "task": "medium"}
+{"question": "Which sea separates Europe from Africa?", "gold": ["mediterranean"], "task": "medium"}
+{"question": "Which vitamin is produced in the skin on exposure to sunlight?", "gold": ["vitamin d", " d"], "task": "medium"}
+{"question": "Who developed the theory of general relativity?", "gold": ["einstein"], "task": "medium"}
+{"question": "Who directed the 1975 film Jaws?", "gold": ["Spielberg"], "task": "medium"}
+{"question": "Who discovered penicillin?", "gold": ["Fleming"], "task": "medium"}
+{"question": "Who founded the Maurya Empire?", "gold": ["chandragupta"], "task": "medium"}
+{"question": "Who is credited with inventing the telephone?", "gold": ["Bell"], "task": "medium"}
+{"question": "Who is credited with inventing the World Wide Web?", "gold": ["berners-lee", "berners lee"], "task": "medium"}
+{"question": "Who painted The Starry Night?", "gold": ["Van Gogh", "Gogh"], "task": "medium"}
+{"question": "Who was the first person to walk on the Moon?", "gold": ["armstrong"], "task": "medium"}
+{"question": "Who was the first woman to win a Nobel Prize?", "gold": ["curie"], "task": "medium"}
+{"question": "Who wrote Crime and Punishment?", "gold": ["Dostoevsky", "Dostoyevsky"], "task": "medium"}
+{"question": "Who wrote Don Quixote?", "gold": ["Cervantes"], "task": "medium"}
+{"question": "Who wrote The Divine Comedy?", "gold": ["Dante"], "task": "medium"}
+{"question": "Who wrote The Great Gatsby?", "gold": ["Fitzgerald"], "task": "medium"}
+{"question": "Who wrote the Indian national anthem?", "gold": ["tagore"], "task": "medium"}
+{"question": "Who wrote the novel Pride and Prejudice?", "gold": ["austen"], "task": "medium"}
+{"question": "Who wrote the play A Doll's House?", "gold": ["Ibsen"], "task": "medium"}
+{"question": "Who wrote War and Peace?", "gold": ["Tolstoy"], "task": "medium"}
+{"question": "Deficiency of which vitamin causes scurvy?", "gold": ["vitamin C", "C"], "task": "hard"}
+{"question": "In which country is the city of Timbuktu?", "gold": ["Mali"], "task": "hard"}
+{"question": "In which year was the transistor first demonstrated at Bell Labs?", "gold": ["1947"], "task": "hard"}
+{"question": "Titan is the largest moon of which planet?", "gold": ["Saturn"], "task": "hard"}
+{"question": "What does the acronym RAID stand for in storage systems?", "gold": ["redundant array"], "task": "hard"}
+{"question": "What is the capital of Bhutan?", "gold": ["Thimphu"], "task": "hard"}
+{"question": "What is the capital of Cambodia?", "gold": ["Phnom Penh"], "task": "hard"}
+{"question": "What is the capital of Croatia?", "gold": ["Zagreb"], "task": "hard"}
+{"question": "What is the capital of Cuba?", "gold": ["Havana", "Habana"], "task": "hard"}
+{"question": "What is the capital of Ecuador?", "gold": ["Quito"], "task": "hard"}
+{"question": "What is the capital of Estonia?", "gold": ["Tallinn"], "task": "hard"}
+{"question": "What is the capital of Finland?", "gold": ["Helsinki"], "task": "hard"}
+{"question": "What is the capital of Ghana?", "gold": ["Accra"], "task": "hard"}
+{"question": "What is the capital of Iceland?", "gold": ["Reykjavik", "Reykjavík"], "task": "hard"}
+{"question": "What is the capital of Ireland?", "gold": ["Dublin"], "task": "hard"}
+{"question": "What is the capital of Jordan?", "gold": ["Amman"], "task": "hard"}
+{"question": "What is the capital of Kazakhstan?", "gold": ["astana", "nur-sultan"], "task": "hard"}
+{"question": "What is the capital of Latvia?", "gold": ["Riga"], "task": "hard"}
+{"question": "What is the capital of Lebanon?", "gold": ["Beirut"], "task": "hard"}
+{"question": "What is the capital of Mongolia?", "gold": ["ulaanbaatar", "ulan bator"], "task": "hard"}
+{"question": "What is the capital of Myanmar?", "gold": ["Naypyidaw", "Nay Pyi Taw"], "task": "hard"}
+{"question": "What is the capital of Nepal?", "gold": ["Kathmandu"], "task": "hard"}
+{"question": "What is the capital of Slovenia?", "gold": ["Ljubljana"], "task": "hard"}
+{"question": "What is the capital of the Indian state of Arunachal Pradesh?", "gold": ["itanagar"], "task": "hard"}
+{"question": "What is the capital of Uruguay?", "gold": ["Montevideo"], "task": "hard"}
+{"question": "What is the capital of Venezuela?", "gold": ["Caracas"], "task": "hard"}
+{"question": "What is the capital of Zimbabwe?", "gold": ["Harare"], "task": "hard"}
+{"question": "What is the chemical symbol for tungsten?", "gold": [" w", "w "], "task": "hard"}
+{"question": "What is the constitutional capital of Bolivia?", "gold": ["Sucre", "La Paz"], "task": "hard"}
+{"question": "What is the currency of Poland?", "gold": ["zloty", "złoty"], "task": "hard"}
+{"question": "What is the hardest known synthetic material after diamond?", "gold": ["boron nitride", "wurtzite"], "task": "hard"}
+{"question": "What is the largest city of Sri Lanka?", "gold": ["Colombo"], "task": "hard"}
+{"question": "What is the largest lake in Africa by area?", "gold": ["Victoria"], "task": "hard"}
+{"question": "What is the largest lake in Africa by surface area?", "gold": ["victoria"], "task": "hard"}
+{"question": "What is the official capital of Tanzania?", "gold": ["Dodoma"], "task": "hard"}
+{"question": "What is the SI unit of luminous intensity?", "gold": ["candela"], "task": "hard"}
+{"question": "What is the SI unit of magnetic flux?", "gold": ["weber"], "task": "hard"}
+{"question": "What is the time complexity of merge sort in the worst case?", "gold": ["n log n", "nlogn"], "task": "hard"}
+{"question": "What is the value of the Avogadro constant to three significant figures?", "gold": ["6.02"], "task": "hard"}
+{"question": "Which algorithm is used to find the shortest path in a weighted graph with non-negative edges?", "gold": ["dijkstra"], "task": "hard"}
+{"question": "Which chemist is credited with the periodic table of 1869?", "gold": ["Mendeleev"], "task": "hard"}
+{"question": "Which dynasty built the Brihadeeswarar temple at Thanjavur?", "gold": ["chola"], "task": "hard"}
+{"question": "Which element has atomic number 42?", "gold": ["molybdenum"], "task": "hard"}
+{"question": "Which element has the chemical symbol W?", "gold": ["tungsten", "wolfram"], "task": "hard"}
+{"question": "Which element is most abundant in the Sun?", "gold": ["hydrogen"], "task": "hard"}
+{"question": "Which element is named after the Greek word for hidden?", "gold": ["krypton"], "task": "hard"}
+{"question": "Which Indian city is known as the Manchester of India?", "gold": ["ahmedabad"], "task": "hard"}
+{"question": "Which Indian mathematician worked with G. H. Hardy at Cambridge?", "gold": ["ramanujan"], "task": "hard"}
+{"question": "Which Indian state has the longest coastline?", "gold": ["gujarat"], "task": "hard"}
+{"question": "Which is the longest bone in the human body?", "gold": ["femur"], "task": "hard"}
+{"question": "Which is the smallest of Earth's oceans?", "gold": ["Arctic"], "task": "hard"}
+{"question": "Which layer of the atmosphere contains the ozone layer?", "gold": ["stratosphere"], "task": "hard"}
+{"question": "Which mathematician introduced the notation for the summation sign?", "gold": ["euler"], "task": "hard"}
+{"question": "Which mountain range is traditionally taken to separate Europe from Asia?", "gold": ["Ural"], "task": "hard"}
+{"question": "Which physicist discovered radioactivity in 1896?", "gold": ["Becquerel"], "task": "hard"}
+{"question": "Which physicist formulated the uncertainty principle?", "gold": ["Heisenberg"], "task": "hard"}
+{"question": "Which physicist is credited with the discovery of the electron?", "gold": ["thomson"], "task": "hard"}
+{"question": "Which planet rotates on its side relative to its orbit?", "gold": ["Uranus"], "task": "hard"}
+{"question": "Which river flows through Baghdad?", "gold": ["Tigris"], "task": "hard"}
+{"question": "Which river is the longest in South America?", "gold": ["amazon"], "task": "hard"}
+{"question": "Which sea lies between Italy and the Balkans?", "gold": ["Adriatic"], "task": "hard"}
+{"question": "Which sorting algorithm has the best average-case behaviour among comparison sorts and is used in most standard libraries?", "gold": ["quicksort", "quick sort", "introsort", "timsort"], "task": "hard"}
+{"question": "Which strait separates Spain from Morocco?", "gold": ["Gibraltar"], "task": "hard"}
+{"question": "Which theorem states that no three positive integers satisfy a^n + b^n = c^n for n greater than two?", "gold": ["fermat"], "task": "hard"}
+{"question": "Who developed the first widely used polio vaccine?", "gold": ["Salk"], "task": "hard"}
+{"question": "Who discovered the neutron?", "gold": ["chadwick"], "task": "hard"}
+{"question": "Who formulated the uncertainty principle in quantum mechanics?", "gold": ["heisenberg"], "task": "hard"}
+{"question": "Who introduced the concept of entropy in thermodynamics?", "gold": ["clausius"], "task": "hard"}
+{"question": "Who painted Guernica?", "gold": ["Picasso"], "task": "hard"}
+{"question": "Who proposed the concept of the Turing machine?", "gold": ["turing"], "task": "hard"}
+{"question": "Who was the first Prime Minister of India?", "gold": ["Nehru"], "task": "hard"}
+{"question": "Who won the Nobel Prize in Literature in 1957?", "gold": ["Camus"], "task": "hard"}
+{"question": "Who wrote Brave New World?", "gold": ["Huxley"], "task": "hard"}
+{"question": "Who wrote One Hundred Years of Solitude?", "gold": ["Marquez", "Márquez"], "task": "hard"}
+{"question": "Who wrote the novel Things Fall Apart?", "gold": ["Achebe"], "task": "hard"}
+{"question": "Who wrote the Sanskrit grammar treatise Ashtadhyayi?", "gold": ["panini", "pāṇini"], "task": "hard"}
+{"question": "Who wrote the treatise Arthashastra?", "gold": ["kautilya", "chanakya"], "task": "hard"}

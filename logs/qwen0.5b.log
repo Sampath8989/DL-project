@@ -1,0 +1,133 @@
+=== Qwen/Qwen2.5-0.5B-Instruct layer_attn 23:34:52
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 669, 'pos_rate': 0.83625}
+training layer_attn probe on (25, 896) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8810213214003685
+  auprc                  0.9738418045363882
+  tpr_at_fpr10           0.7251908396946565
+  ece                    0.17290151002816856
+  brier                  0.144700933122686
+  n                      160
+  n_pos                  131
+  pos_rate               0.81875
+  mean_spread            0.020702719688415527
+  selectivity            0.34595308909316447
+  auroc_random_labels    0.535068232307204
+  auroc_confounds_only   0.8161253561253561
+  auroc_with_probe       0.8655555555555555
+  unique_gain            0.04943019943019944
+  model                  Qwen/Qwen2.5-0.5B-Instruct
+  dataset                popqa
+  arch                   layer_attn
+  rep                    h_answer
+  layer                  -1
+  n_params               120065
+  cache                  D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.3061961332401584
+
+wrote D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\layer_attn_h_answer.json
+=== Qwen/Qwen2.5-0.5B-Instruct linear 23:35:26
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 669, 'pos_rate': 0.83625}
+training linear probe on (896,) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8923400894972362
+  auprc                  0.9756929464912931
+  tpr_at_fpr10           0.7175572519083969
+  ece                    0.28962079690536485
+  brier                  0.18686292944326405
+  n                      160
+  n_pos                  131
+  pos_rate               0.81875
+  mean_spread            0.033384330570697784
+  selectivity            0.4394679854032978
+  auroc_random_labels    0.4528721040939384
+  auroc_confounds_only   0.8161253561253561
+  auroc_with_probe       0.8745299145299145
+  unique_gain            0.05840455840455838
+  model                  Qwen/Qwen2.5-0.5B-Instruct
+  dataset                popqa
+  arch                   linear
+  rep                    h_answer
+  layer                  6
+  n_params               897
+  cache                  D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.3061961332401584
+
+wrote D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\linear_h_answer.json
+=== Qwen/Qwen2.5-0.5B-Instruct mlp 23:35:40
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 669, 'pos_rate': 0.83625}
+training mlp probe on (896,) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.8910239536720189
+  auprc                  0.9764300111094399
+  tpr_at_fpr10           0.732824427480916
+  ece                    0.14108711518347264
+  brier                  0.13449530495690618
+  n                      160
+  n_pos                  131
+  pos_rate               0.81875
+  mean_spread            0.022099848836660385
+  selectivity            0.38166184640448486
+  auroc_random_labels    0.5093621072675341
+  auroc_confounds_only   0.8161253561253561
+  auroc_with_probe       0.8717663817663818
+  unique_gain            0.05564102564102569
+  model                  Qwen/Qwen2.5-0.5B-Instruct
+  dataset                popqa
+  arch                   mlp
+  rep                    h_answer
+  layer                  6
+  n_params               124929
+  cache                  D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.3061961332401584
+
+wrote D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\mlp_h_answer.json
+=== Qwen/Qwen2.5-0.5B-Instruct traj 23:35:56
+working set: working_popqa.jsonl (800 items)
+reusing cache: D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+label balance: {'n': 800, 'n_pos': 669, 'pos_rate': 0.83625}
+training traj probe on (16, 896) ...
+  confounds used: ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+
+  auroc                  0.872861279284022
+  auprc                  0.9698282501813211
+  tpr_at_fpr10           0.5877862595419847
+  ece                    0.15530769475735728
+  brier                  0.1503124334476584
+  n                      160
+  n_pos                  131
+  pos_rate               0.81875
+  mean_spread            0.049504656344652176
+  selectivity            0.37651091432051836
+  auroc_random_labels    0.49635036496350365
+  auroc_confounds_only   0.8161253561253561
+  auroc_with_probe       0.8518518518518519
+  unique_gain            0.03572649572649578
+  model                  Qwen/Qwen2.5-0.5B-Instruct
+  dataset                popqa
+  arch                   traj
+  rep                    h_answer
+  layer                  6
+  n_params               382081
+  cache                  D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\acts.npz
+  confounds_used         ['mean_logprob', 'min_logprob', 'n_new_tokens', 'answer_chars', 'log_popularity']
+  seed                   0
+  artefact_task_acc      0.3061961332401584
+
+wrote D:\Deep Learning\hallu-probe\out\Qwen_Qwen2.5-0.5B-Instruct__popqa\traj_h_answer.json
+=== DONE Qwen/Qwen2.5-0.5B-Instruct 23:37:18
